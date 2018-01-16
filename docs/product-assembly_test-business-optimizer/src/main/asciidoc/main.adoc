@@ -1,0 +1,33 @@
+[id='assembly_guided-decision-tables']
+
+include::product-shared-docs/document-attributes.adoc[]
+
+= Installing and configuring the Business Optimizer
+// Context attribute is assembly specific and enables module reuse between assemblies.
+:imagesdir: topics/product-shared-docs/images
+:context: business-optimizer
+include::product-shared-docs/author-group.adoc[]
+
+// Purpose statement for the assembly
+As a business rules developer, you can find the optimal solution to planning problems using the Business Optimizer functionality.
+
+.Prerequisite
+Download and install {PRODUCT}.
+
+
+// Modules - concepts, procedures, refs, etc.
+== Set up and configure the Maven dependencies
+
+include::product-business-resource-planner-guide/chap-planner-introduction.adoc[leveloffset=+1]
+include::product-development-guide/chap-maven-dependencies.adoc[leveloffset=+1]
+
+== Configuring Business Optimizer
+
+include::product-business-resource-planner-guide/PlannerConfiguration-chapter.adoc[leveloffset=+1]
+include::optaplanner-wb-es-docs/Workbench/Quickstart-chapter.adoc[leveloffset=+1]
+
+
+
+
+// Versioning info
+include::product-shared-docs/versioning-information.adoc[]
