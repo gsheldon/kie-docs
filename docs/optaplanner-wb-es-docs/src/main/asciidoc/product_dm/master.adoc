@@ -2,7 +2,7 @@
 :shared-dir: shared-docs
 :imagesdir: topics/shared/images
 
-:PRODUCT: Red Hat JBoss BRMS
+:PRODUCT: Red Hat JBoss Decision Manager
 :PRODUCT_VERSION: 7.0
 :ENTERPRISE-ONLY:
 
