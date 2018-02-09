@@ -1,0 +1,13 @@
+[id='assembly_business-optimizer-modifying-ER-sample']
+
+include::product-shared-docs/document-attributes.adoc[]
+
+= Modifying the employee roster sample for Business Optimizer 
+// Context attribute is assembly specific and enables module reuse between assemblies.
+:imagesdir: topics/product-shared-docs/images
+:context: optimizer-modifying-roster-sample
+include::product-shared-docs/author-group.adoc[]
+
+// Purpose statement for the assembly
+As a business rules developer, you can modify the employee rostering sample project in {CENTRAL} to find different rostering solutions using {PLANNER} capabilities. 
+//by creating data objects with data fields, such as Violation Date, Fine Amount, and so on.
