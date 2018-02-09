@@ -30,7 +30,7 @@ It is 100% pure Java(TM) and runs on any Java virtual machine.
 
 {PLANNER} is production ready.
 The API is stable but backward incompatible changes can occur.
-With the recipe called https://github.com/droolsjbpm/optaplanner/blob/master/optaplanner-distribution/src/main/assembly/filtered-resources/UpgradeFromPreviousVersionRecipe.txt[UpgradeFromPreviousVersionRecipe.txt], you can easily upgrade to a newer version and quickly deal with any backwards incompatible changes.
+With the recipe called https://www.optaplanner.org/download/upgradeRecipe/[UpgradeFromPreviousVersionRecipe.txt], you can easily upgrade to a newer version and quickly deal with any backwards incompatible changes.
 This recipe file is included in every release.
 
 .Procedure: Get the release ZIP and run the examples
@@ -126,3 +126,4 @@ Check the Maven repository `pom.xml` files to determine the minimal dependency s
 ====
 {PLANNER} will be known as Planner for the rest of this book.
 ====
+

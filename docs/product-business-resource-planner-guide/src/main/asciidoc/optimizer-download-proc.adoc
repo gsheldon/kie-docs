@@ -1,0 +1,23 @@
+[id='optimizer-download-proc']
+= Download {PLANNER}
+
+{PLANNER} is production ready.
+The API is stable but backward incompatible changes can occur.
+
+.Prerequisite
+The {PRODUCT} has been downloaded and installed from the https://access.redhat.com[Red Hat Customer Portal]. See Installing Decision Manager for more information about installing {PRODUCT}.
+//@doc-link:Add link to Installation assembly above. 
+
+.Procedure
+. Download the {PLANNER} file from the https://access.redhat.com[Red Hat Customer Portal].
+. Unzip the {PLANNER} files.
+
+
+////
+[float]
+== Upgrading from previous versions
+
+With the recipe called https://www.optaplanner.org/download/upgradeRecipe/[UpgradeFromPreviousVersionRecipe.txt], you can easily upgrade to a newer version and quickly deal with any backwards incompatible changes.
+
+This recipe file is included in every release.
+////
