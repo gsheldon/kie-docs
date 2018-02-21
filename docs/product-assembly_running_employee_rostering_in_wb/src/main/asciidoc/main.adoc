@@ -1,0 +1,35 @@
+[id='assembly_optimizer-running-employee-rostering-in-wb']
+
+include::product-shared-docs/document-attributes.adoc[]
+
+= Running the employee rostering sample project in {CENTRAL}
+// Context attribute is assembly specific and enables module reuse between assemblies.
+:imagesdir: topics/product-shared-docs/images
+:context: running-employee-rostering
+include::product-shared-docs/author-group.adoc[]
+
+
+// Purpose statement for the assembly
+As a business rules developer, you can test and interact with the {PLANNER} functionality using the preconfigured `employee-rostering` sample project included in the {PRODUCT} distribution. 
+
+.Prerequisite
+{PRODUCT} has been downloaded, configured for {PLANNER} and deployed in {CENTRAL}. For more information about the required configuration, see {URL_GETTING_STARTED_DECISION_SERVICE}[_{GETTING_STARTED_DECISION_SERVICE}_] and {URL_INSTALLING_PLANNER}[_INSTALLING_PLANNER_].
+
+// files
+//
+include::wb-employee-rostering-example-about-con.adoc[leveloffset=+1]
+include::wb-employee-rostering-example-deploying-in-central-proc.adoc[leveloffset=+2]
+// Setting up the actual ER example
+include::wb-employee-rostering-example-setup-proc.adoc[leveloffset=+1]
+// includes: creating organizational unit, creating repository, creating project
+include::wb-employee-rostering-data-model-proc.adoc[leveloffset=+1]
+// includes:: creating the data object, adding fields, completing data model
+include::wb-employee-rostering-optimizer-config-proc.adoc[leveloffset=+1]
+// creating the data object(planning solution), set hard and soft constraints, configure planing entity and planning variable
+include::wb-employee-rostering-optimizer-drools-rules-proc.adoc[leveloffset=+1]
+include::wb-employee-rostering-optimizer-drl-editor-proc[leveloffset=+2]
+include::wb-employee-rostering-guided-rule-editor-proc.adoc[leveloffset=+2]
+include::wb-employee-rostering-solver-config-proc.adoc[leveloffset=+1]
+include::wb-employee-rostering-build-and-deploy-proc.adoc[leveloffset=+1]
+include::wb-employee-rostering-kie-server-integration-proc.adoc[leveloffset=+1]
+
