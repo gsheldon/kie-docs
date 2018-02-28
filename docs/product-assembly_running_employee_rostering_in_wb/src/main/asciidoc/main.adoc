@@ -13,12 +13,18 @@ include::product-shared-docs/author-group.adoc[]
 As a business rules developer, you can test and interact with the {PLANNER} functionality using the preconfigured `employee-rostering` sample project included in the {PRODUCT} distribution. 
 
 .Prerequisite
-{PRODUCT} has been downloaded, configured for {PLANNER} and deployed in {CENTRAL}. For more information about the required configuration, see {URL_GETTING_STARTED_DECISION_SERVICE}[_{GETTING_STARTED_DECISION_SERVICE}_] and {URL_INSTALLING_PLANNER}[_INSTALLING_PLANNER_].
+
+* Installed {EAP_LONG} 7.1.0. See  https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html-single/installation_guide/[_Red Hat JBoss EAP 7.1.0 Installation Guide_].
+* Installed {PRODUCT}. For more information, see the {URL_INSTALLING_DM_ON_PREMISE}[{INSTALLING_DM_ON_PREMISE}].
+* {PRODUCT} is running and you can log in to {CENTRAL} with the `admin` role. For more information, see the {URL_INSTALLING_DM_ON_PREMISE}[{INSTALLING_DM_ON_PREMISE}].
+* {PRODUCT} is configured for {PLANNER}. For more information about the required configuration, see {URL_INSTALLING_PLANNER}[_INSTALLING_PLANNER_].
 
 // files
 //
 include::wb-employee-rostering-example-about-con.adoc[leveloffset=+1]
+//todo ^^
 include::wb-employee-rostering-example-deploying-in-central-proc.adoc[leveloffset=+2]
+
 // Setting up the actual ER example
 include::wb-employee-rostering-example-setup-proc.adoc[leveloffset=+1]
 // includes: creating organizational unit, creating repository, creating project
