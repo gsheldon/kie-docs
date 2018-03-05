@@ -21,9 +21,9 @@ As a business rules developer, you can test and interact with the {PLANNER} func
 
 // files
 //
-include::wb-employee-rostering-example-about-con.adoc[leveloffset=+1]
-//todo ^^
-include::wb-employee-rostering-example-deploying-in-central-proc.adoc[leveloffset=+2]
+//include::wb-employee-rostering-example-about-con.adoc[leveloffset=+1]
+//TODO ^^
+include::wb-employee-rostering-example-deploying-in-central-proc.adoc[leveloffset=+1]
 
 // Setting up the actual ER example
 include::wb-employee-rostering-example-setup-proc.adoc[leveloffset=+1]
