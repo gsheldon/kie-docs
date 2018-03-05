@@ -18,8 +18,13 @@ Click *Ok* to create the data object.
 . Remove the default field.
 . Add the following fields with the given type:
 +
-* `endTime`: `LocalDateTime`
-* `startTime`: `LocalDateTime`
-. Using the same process, create the following data objects and their attributes:
+DayOffRequest::
+* `date`: `LocalDate`
+* `employee`: `employeerostering.employeerostering.Employee`
++
+ShiftAssignment::
+* `employee`: `employeerostering.employeerostering.Employee`
+* `shift`: `employeerostering.employeerostering.Shift`
+
 
 //TODO
