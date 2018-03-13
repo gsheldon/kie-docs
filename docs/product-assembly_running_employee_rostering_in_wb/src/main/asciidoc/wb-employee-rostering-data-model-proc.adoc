@@ -19,7 +19,7 @@ Click *Ok*.
 . Click *Create*.
 . Click *Save* in the upper right corner to save the `Timeslot` data object. 
 . Click the *x* in the upper right to close the *Data Objects* perspective and return to the *Assets* menu. 
-. Using the previous steps, create the following data objects and their attributes:
+. Using the previous steps, create the following data objects and their fields:
 +
 .Skill
 [cols="1.1",options="header"]

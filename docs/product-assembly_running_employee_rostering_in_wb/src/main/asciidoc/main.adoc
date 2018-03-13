@@ -25,11 +25,18 @@ As a business rules developer, you can test and interact with the {PLANNER} func
 //TODO ^^
 include::wb-employee-rostering-example-deploying-in-central-proc.adoc[leveloffset=+1]
 
+<<<<<<< HEAD
+=======
+// Setting up the actual ER example
+>>>>>>> Revert "Bxmsdoc 2288.backup"
 include::wb-employee-rostering-example-setup-proc.adoc[leveloffset=+1]
 // includes: creating organizational unit, creating repository, creating project
 include::wb-employee-rostering-data-model-proc.adoc[leveloffset=+1]
+<<<<<<< HEAD
 include::wb-employee-rostering-planning-entity-proc.adoc[leveloffset=+2]
 include::wb-employee-rostering-planning-solution-proc.adoc[leveloffset=+2]
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 include::wb-employee-rostering-constraints-con.adoc[leveloffset=+1]
 include::product-user-guide/drl-rules-con.adoc[leveloffset=+2]
@@ -46,6 +53,26 @@ include::wb-employee-rostering-solver-configuration-proc.adoc[leveloffset=+1]
 include::wb-employee-rostering-solver-termination-configuration-proc.adoc[leveloffset=+2]
 include::wb-employee-rostering-register-solver-proc.adoc[leveloffset=+2]
 
+=======
+=======
+=======
+<<<<<<< HEAD
+include::wb-employee-rostering-planning-solution-proc.adoc[leveloffset=+1]
+>>>>>>> BXMSDOC-2276: added EmployeeRoster planning solution
+>>>>>>> BXMSDOC-2276: added EmployeeRoster planning solution
+=======
+include::wb-employee-rostering-planning-entity-proc.adoc[leveloffset=+2]
+include::wb-employee-rostering-planning-solution-proc.adoc[leveloffset=+2]
+>>>>>>> BXMSDOC-2276: Incorporated SME feedback and created planning entity chapter for ShiftAssignment object
+>>>>>>> BXMSDOC-2276: Incorporated SME feedback and created planning entity chapter for ShiftAssignment object
+// includes:: creating the data object, adding fields, completing data model
+//include::wb-employee-rostering-optimizer-config-proc.adoc[leveloffset=+1]
+// creating the data object(planning solution), set hard and soft constraints, configure planing entity and planning variable
+//include::wb-employee-rostering-optimizer-drools-rules-proc.adoc[leveloffset=+1]
+//include::wb-employee-rostering-optimizer-drl-editor-proc[leveloffset=+2]
+//include::wb-employee-rostering-guided-rule-editor-proc.adoc[leveloffset=+2]
+//include::wb-employee-rostering-solver-config-proc.adoc[leveloffset=+1]
+>>>>>>> Revert "Bxmsdoc 2288.backup"
 //include::wb-employee-rostering-build-and-deploy-proc.adoc[leveloffset=+1]
 //include::wb-employee-rostering-kie-server-integration-proc.adoc[leveloffset=+1]
 
