@@ -11,20 +11,56 @@ You have completed the project set up described in <<wb-employee-rostering-examp
 . With your new project, either click *Data Object* in the project perspective, or click *Create New Asset* -> *Data Object* to create a new data object.
 . In the *Create new Data Object* window, create a new data object with the following properties:
 +
-* *Data Object*: `Timeslot`
-* *Package*: `employeerostering.employeerostering`
+Click *Ok*.
+. In the *Data Objects* perspective, click *+add field* to add fields to the `Timeslot` data object.
+. In the *id* field, type `endTime`.
+. Click the drop-down menu next to *Type* and select `LocalDateTime`.
+. Click *Create and continue* to add another field.
+. Add another field with the *id* `startTime` and *Type* `LocalDateTime`.
+. Click *Create*.
+. Click *Save* in the upper right corner to save the `Timeslot` data object. 
+. Click the *x* in the upper right to close the *Data Objects* perspective and return to the *Assets* menu. 
+. Using the previous steps, create the following data objects and their fields:
 +
-Click *Ok* to create the data object.
-. Remove the default field.
-. Add the following fields with the given type:
+.Skill
+[cols="1.1",options="header"]
+|===
+| id | Type 
+| `name` | `String`
+|===
 +
-DayOffRequest::
-* `date`: `LocalDate`
-* `employee`: `employeerostering.employeerostering.Employee`
+.Employee
+[cols="1.1",options="header"]
+|===
+| id | Type 
+| `name` | `String` 
+| `skills` | `employeerostering.employeerostering.Skill[List]`
+|===
 +
-ShiftAssignment::
-* `employee`: `employeerostering.employeerostering.Employee`
-* `shift`: `employeerostering.employeerostering.Shift`
+.Shift
+[cols="1.1",options="header"]
+|===
+| id | Type 
+| `requiredSkill` | `employeerostering.employeerostering.Skill`
+| `timeslot` | `employeerostering.employeerostering.Timeslot`
+|===
++
+.DayOffRequest
+[cols="1.1",options="header"]
+|===
+| id | Type 
+| `date` | `LocalDate`
+| `employee` | `employeerostering.employeerostering.Employee`
+|===
++
+.ShiftAssignment 
+[cols="1.1",options="header"]
+|===
+| id | Type 
+| `employee` | `employeerostering.employeerostering.Employee`
+| `shift` | `employeerostering.employeerostering.Shift`
+|===
+
 
 
 For more information about creating data objects, see {URL_GETTING_STARTED_DECISION_SERVICE}[_{GETTING_STARTED_DECISION_SERVICE}_].
