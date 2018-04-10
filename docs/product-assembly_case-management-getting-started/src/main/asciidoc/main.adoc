@@ -21,3 +21,4 @@ Case management differs from Business Process Management (BPM), in that it focus
 
 
 
+include::product-shared-docs/versioning-information.adoc[]
