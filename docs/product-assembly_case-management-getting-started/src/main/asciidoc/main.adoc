@@ -11,29 +11,13 @@ include::product-shared-docs/author-group.adoc[]
 
 // Purpose statement for the assembly
 
-Case management differs from Business Process Management, in that it focuses on the actual data being handled throughout the case, and less on the sequence of steps taken to complete a goal. Case data is the most important piece of information in case handling, while business context and decision-making is in the hands of the human case worker.
+As a developer, a business analyst, or a process manager, you can use case management to create or manage unpredictable and ad hoc processes.
 
-Business Process Management (BPM) is a management practice for automating tasks that are repeatable and have a common pattern. The focus is on optimization by perfecting a process, which requires a lot of predictability, usually based on mass-production principles. 
+Case management differs from Business Process Management (BPM), in that it focuses on the actual data being handled throughout the case and less on the sequence of steps taken to complete a goal. Case data is the most important piece of information in case handling, while business context and decision-making is in the hands of the human case worker.
 
-However, many applications in the real world cannot be described completely from start to finish (including all possible paths, deviations, and exceptions). Moreover, using a process oriented approach in certain cases may lead to complex solutions that are hard to maintain. Case management focuses on problem resolution for unpredictable process instances as opposed to the efficiency oriented approach of Business Process Management for routine predictable tasks.
-
-Case management is used for processes that are not repeatable, and are to an extent, unpredictable. It can be used for one-off situations where the process cannot be predicted in advance. Tools are required to be usable on-demand, and the process managed dynamically in response to changes that occur during runtime. Case management solutions are template-based, with users having control over processes that can change on a case-by-case basis. As work cannot be predefined in case management, each case instance must have a goal, a deadline, and a predefined product or outcome. Case management is for such collaborative and dynamic tasks that require human actions, therefore a person needs to own the case and manage the process, making the necessary changes to reach a case resolution.
+// .Prerequisite
 
 // modules
 
-include::product-user-guide/case-management-definition-con.adoc[leveloffset=+1]
 
-include::product-user-guide/case-management-case-file.con.adoc[leveloffset=+1]
-
-include::product-user-guide/case-management-roles-con.adoc[leveloffset=+1]
-
-include::product-user-guide/case-management-adhoc-con.adoc[leveloffset=+1]
-
-include::product-user-guide/case-management-stages-con.adoc[leveloffset=+1]
-
-include::product-user-guide/case-management-milestones-con.adoc[leveloffset=+1]
-
-include::product-user-guide/case-management-comments-con.adoc[leveloffset=+1]
-
-include::product-user-guide/case-management-apps-con.adoc[leveloffset=+1]
 
