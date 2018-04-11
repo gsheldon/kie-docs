@@ -12,14 +12,14 @@ Case management solutions are template-based, with users having control over pro
 In {PRODUCT}, case management includes the following core engine features:
 
 * case file instance
-* per case session strategy
+* per case runtime strategy
 * case comments
 * milestones
 * stages
 * ad hoc fragments
 * dynamic tasks
 * case identifier (correlation key)
-* case lifecycle (close, reopen, resolve, etc)
+* case lifecycle (close, reopen, cancel, destroy)
 
 In {PRODUCT}, case management authoring uses BPMN2 rather than CMMN for both modeling and execution. This means that there is no need to choose between BPM or case management; you can use both, taking advantage of your existing knowledge of BPM, while also benefiting from the dynamic capabilities of case management.
 
