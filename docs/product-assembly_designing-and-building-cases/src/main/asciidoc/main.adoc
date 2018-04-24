@@ -36,8 +36,8 @@ include::product-assembly_case-management-getting-started/case-management-creati
 include::product-assembly_case-management-getting-started/case-management-designing-a-case-proc.adoc[leveloffset=+1]
 include::product-user-guide/case-management-case-file.con.adoc[leveloffset=+1]
 
-// include::product-assembly_case-management-getting-started/case-management-subcases-con.adoc[leveloffset=+1]
-// include::product-assembly_case-management-getting-started/case-management-configuring-subcases-proc.adoc[leveloffset=+2]
+include::product-assembly_case-management-getting-started/case-management-subcases-con.adoc[leveloffset=+1]
+include::product-assembly_case-management-getting-started/case-management-configuring-subcases-proc.adoc[leveloffset=+2]
 
 include::product-user-guide/case-management-adhoc-con.adoc[leveloffset=+1]
 include::product-assembly_case-management-getting-started/case-management-adding-adhoc-tasks-proc.adoc[leveloffset=+2]
