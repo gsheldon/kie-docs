@@ -1,0 +1,63 @@
+[id='assembly_case-management-designing-and-building']
+
+include::product-shared-docs/document-attributes.adoc[]
+
+= Designing and building cases for case management
+// Context attribute is assembly specific and enables module reuse between assemblies.
+:imagesdir: topics/product-shared-docs/images
+:context: case-management-design
+include::product-shared-docs/author-group.adoc[]
+
+
+// Purpose statement for the assembly
+
+As a developer, you can configure assets in {PRODUCT} for case management using {CENTRAL}.
+
+Case management differs from Business Process Management (BPM), in that it focuses on the actual data being handled throughout the case and less on the sequence of steps taken to complete a goal. Case data is the most important piece of information in case handling, while business context and decision-making is in the hands of the human case worker.
+
+Use this document to get started with case management by walking through the IT Orders sample project in {CENTRAL}. Deploy the project in {CENTRAL} to view and interact with the case assets described in this tutorial, or recreate the project yourself.
+
+
+.Prerequisites
+
+* {EAP_LONG} 7.1.0 installed. See  https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html-single/installation_guide/[_Red Hat JBoss EAP 7.1.0 Installation Guide_].
+* {PRODUCT} installed. For more information.
+* {PRODUCT} is running and you can log in to {CENTRAL} with the `user` role. For more information.
+
+
+// include::product_assembly-case-management-getting-started/case-management-overview-con.adoc[leveloffset=+1]
+// include::case-management-case-modeling-proc.adoc[leveloffset=+1]
+// include::case-management-case-subject-con.adoc[leveloffset=+1]
+// include::case-management-case-definition-proc.adoc[leveloffset=+1]
+// include::product_assembly-case-management-getting-started/case-management-creating-a-case-proc.adoc[leveloffset=+1]
+// include::product_assembly-case-management-getting-started/case-management-subcases-proc.adoc[leveloffset=+1]
+
+include::product-user-guide/case-management-adhoc-con.adoc[leveloffset=+1]
+// include::product_assembly-case-management-getting-started/case-management-adding-adhoc-tasks-proc.adoc[leveloffset=+2]
+// include::case-management-adding-adhoc-tasks-during-runtime-proc.adoc[leveloffset=+2]
+
+include::product-user-guide/case-management-roles-con.adoc[leveloffset=+1]
+// include::case-management-assign-task-to-role-proc.adoc[leveloffset=+2]
+// include::case-management-parties-con.adoc[leveloffset=+1]
+// include::case-management-assign-task-to-party-proc.adoc[leveloffset=+2]
+
+include::product-user-guide/case-management-stages-con.adoc[leveloffset=+1]
+// include::case-management-stage-activation-proc.adoc[leveloffset=+2]
+// include::case-management-activation-conditions-ref.adoc[leveloffset=+2]
+// include::case-management-dynamic-tasks-during-stages-proc.adoc[leveloffset=+2]
+// include::case-management-auto-completion-proc.adoc[leveloffset=+2]
+// include::case-management-skipping-stages-proc.adoc[leveloffset=+2]
+
+include::product-user-guide/case-management-milestones-con.adoc[leveloffset=+1]
+// include::product_assembly-case-management-getting-started/case-management-milestone-triggering-proc.adoc[leveloffset=+2]
+
+// include::case-management-auto-part-activities-proc.adoc[leveloffset=+1]
+// include::case-management-change-members-of-parties-proc.adoc[leveloffset=+1]
+// include::case-management-change-user-roles-during-runtime-proc.adoc[leveloffset=+1]
+// include::case-management-completion-conditions-con.adoc[leveloffset=+1]
+// include::case-management-stage-completion-using-case-file-data-proc.adoc[leveloffset=+1]
+// include::case-management-milestone-completion-using-case-file-data-proc.adoc[leveloffset=+1]
+
+
+
+include::product-shared-docs/versioning-information.adoc[]
