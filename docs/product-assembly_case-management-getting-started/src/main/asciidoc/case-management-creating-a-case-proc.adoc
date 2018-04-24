@@ -1,0 +1,3 @@
+[id='case-management-creating-a-case-proc']
+= Creating a case in {PRODUCT}
+

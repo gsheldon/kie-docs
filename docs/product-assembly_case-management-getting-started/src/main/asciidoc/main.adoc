@@ -11,14 +11,50 @@ include::product-shared-docs/author-group.adoc[]
 
 // Purpose statement for the assembly
 
-As a developer, a business analyst, or a process manager, you can use case management to create or manage unpredictable and ad hoc processes.
+As a case worker or process administrator, you can use case management to create or manage unpredictable and ad hoc processes.
 
 Case management differs from Business Process Management (BPM), in that it focuses on the actual data being handled throughout the case and less on the sequence of steps taken to complete a goal. Case data is the most important piece of information in case handling, while business context and decision-making is in the hands of the human case worker.
+
+Use this getting started document to walk through the IT Orders sample project in {CENTRAL}. Deploy the project in {CENTRAL} to view and interact with the case assets described in this tutorial, or recreate the project yourself.
+
 
 // .Prerequisite
 
 // modules
 include::case-management-overview-con.adoc[leveloffset=+1]
+include::case-management-creating-a-case-proc.adoc[leveloffset=+1]
+include::product-user-guide/case-management-case-file.con.adoc[leveloffset=+1]
+include::case-management-designing-a-case-proc.adoc[leveloffset=+1]
+include::case-management-subcases-proc.adoc[leveloffset=+1]
+
+include::product-user-guide/case-management-roles-con.adoc[leveloffset=+1]
+include::case-management-itorders-roles-proc.adoc[leveloffset=+2]
+include::case-management-role-authorization-proc.adoc[leveloffset=+2]
+
+include::product-user-guide/case-management-adhoc-con.adoc[leveloffset=+1]
+include::case-management-itorders-adhoc-tasks-proc.adoc[leveloffset=+2]
+include::case-management-adding-adhoc-tasks-proc.adoc[leveloffset=+2]
+
+include::product-user-guide/case-management-stages-con.adoc[leveloffset=+1]
+include::case-management-defining-a-stage-proc.adoc[leveloffset=+2]
+include::case-management-stage-activation-and-completion-conditions-proc.adoc[leveloffset=+2]
+
+include::product-user-guide/case-management-milestones-con.adoc[leveloffset=+1]
+include::case-management-milestone-triggering-proc.adoc[leveloffset=+2]
+include::case-management-itorders-milestones-proc.adoc[leveloffset=+2]
+
+include::product-user-guide/case-management-comments-con.adoc[leveloffset=+1]
+include::case-management-itorders-adding-a-comment-proc.adoc[leveloffset=+2]
+
+include::product-user-guide/case-management-apps-con.adoc[leveloffset=+1]
+include::case-management-showcase-application-con.adoc[leveloffset=+1]
+include::case-management-install-and-login-to-showcase-proc.adoc[leveloffset=+2]
+include::case-management-monitor-itorders-in-showcase-proc.adoc[leveloffset=+2]
+
+include::case-management-close-case-proc.adoc[leveloffset=+1]
+include::case-management-cancel-case-proc.adoc[leveloffset=+1]
+include::case-management-destroy-case-proc.adoc[leveloffset=+1]
+
 
 
 include::product-shared-docs/versioning-information.adoc[]
