@@ -3,8 +3,8 @@
 
 A case project is a type of project in {CENTRAL} that is configured for case management. When you create a new case project, the following configurations are set automatically in {CENTRAL}:
 
-* Runtime strategy is set to `Per Case`.
-* Case and documents marshallers are configured. These marshallers 
+* Runtime strategy is set to `Per Case` in order to correctly initialize the {SERVER}. 
+* Case and documents marshallers are configured. These marshallers serialize case file data across the entire case.
 * `WorkDefinition.wid` files are created in the project and its packages when a new case definition is created to ensure case related nodes such as `Milestone` are available in the case definition design palette.
 
 .Prerequisite
