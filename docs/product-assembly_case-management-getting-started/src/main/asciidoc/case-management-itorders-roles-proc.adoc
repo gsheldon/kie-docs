@@ -1,2 +1,29 @@
-[id='']
-= TODO
+[id='case-management-itorders-roles-proc']
+= Creating case roles
+
+.Procedure 
+. *Define the case roles*
++
+Click image:3898.png[] to open the *Properties* menu on the right side of the designer and open the *Editor for Case Roles*. Click *Add Case Role* to add case roles. 
++
+.ITOrders Case Roles
+image::case_roles.png[Case Roles]
++
+* `owner` - the person requesting the hardware. There can be only one of these roles.
+* `manager` - the person who will approve or deny the requested hardware. There is only one manager in the IT Orders project.
+* `supplier` - a set of people who can order and deliver the requested and approved hardware. There is usually more than one supplier.
++
+
+
+When the roles are known, case management must ensure that these are not hardcoded to single set of people/groups as part of case definition and that it can differ per each case instance. This is where case role assignments come into the picture and can be:
+
+   given when case starts
+   set at any given point in time while case is active
+   removed at any given point in time while case is active
+
+second and third option does not alter the task assignments for already active tasks.
+
+[IMPORTANT]
+====
+ What is important to note here, is that in case management users should always use roles for task assignments instead of actual user/group names, that is to make the case as dynamic as possible so actual user/group assignment is done as late as possible. It's similar to process variables though without expression syntax.
+====

@@ -1,3 +1,4 @@
+[id='case-management-roles-con-{context}']
 = Case Roles
 
 Case roles provide an additional layer of abstraction for user participation in case handling. Roles drive the authorization for the case instance, and can be used for user activities assignment. The only role that is predefined is `Owner`. A user, a group, or groups can be assigned to the owner role. The owner is whoever the case belongs to. This can be changed. Roles are not restricted to a single set of people or groups as part of case definition. 

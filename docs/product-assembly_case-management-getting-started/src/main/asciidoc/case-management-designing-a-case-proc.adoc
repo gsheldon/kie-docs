@@ -1,2 +1,87 @@
-[id='']
-= TODO
+[id='case-management-designing-a-case-proc']
+= Designing a case
+
+Cases are designed using the *Case definition* design editor in {CENTRAL}. The case design is the basis of case management and sets out the specific goals and tasks for each case. The design can be added to and modified dynamically during runtime.
+
+To demonstrate how to design a case, {PRODUCT} includes the IT Orders sample project in {CENTRAL}, which includes the following case definition:
+
+image::itorders-orderhardware-process.png[IT Orders case design]
+
+You can refer to and interact with this case definition by importing the sample project in {CENTRAL}. 
+
+.Prerequisite 
+* You have followed the procedure in <<case-management-creating-a-case-proc>> to create a new case in {CENTRAL}.
+
+.Procedure
+. *Create a new case definition.*
++
+In the *Assets* window, click *Add Asset* in the upper-right corner of the project perspective and select *Case definition*. 
+
+. Complete the required information in the *Create new Case definition* window:
++
+* `name` - the name of the case. This is usually the subject of the case or project that is being case managed.
+* `package` - the location in which case file is to be created.
+* `Case ID prefix (optional)` - a configurable prefix that allows you to easily distinguish different types of cases. The prefix is follows with a generated ID in the format `ID-XXXXXXXXXX`, where `X` is a generated number that provides a unique ID for the case instance. If a prefix is not provided, the default prefix is `CASE` and generates instances with the following identifiers: 
++
+`CASE-0000000001`
++
+`CASE-0000000002`
++
+`CASE-0000000003`
++
+and so on. If a prefix is set to something else, such as `IT` for example, the following identifiers are generated:
++
+`IT-0000000001`
++
+`IT-0000000002`
++
+`IT-0000000003`
+
++
+. Click *Ok* to open the case designer.
++
+The designer creates a `WorkDefinition` file that includes the work items required for case definition. These appear as usable objects in the case designer *Object Library*, accessible by clicking the image:3897.png[left arrows] in the upper-left corner of the designer.
++ 
+** Verify that the case designer includes the `Milestones` and `Cases` objects by either checking the *Object Library* dock on the left side of the case designer, or by checking the `WorkDefinition` file under *Work Item Definitions* in the *Project Explorer* window on the left side of the {CENTRAL} workbench.
+. *Define process level and case level variables.* 
++
+Click the image:3140.png[] arrow on the right side of the designer to open the `Properties (BPMN-Diagram)` panel. Click the down arrow next to `Variable Definitions` to open the `Editor for Variable Definitions`.
++
+.IT Orders variables
+image::case-variables.png[Editor for IT Orders variables]
++
+In the IT Orders sample project, you can see that certain variables are identified as `Case File`. A case file variable is stored in the case file itself, and promotes reuse of the case file data rather than copying it across multiple process instances. For example, the `hwSpec` variable is available to all processes within the case, and is accessible directly from the case file even without an existing process instance. 
++
+For more information about the case file, see <<case-management-case-file-con-{context}>>.
+
+. *Define the roles involved in the case.*
++
+Open the properties panel and click the down arrow next to `Variable Definitions` to open the `Editor for Variable Definitions`.For more information about roles, see <<case-management-roles-con-{context}>>.
+
+. *Define what work item will be triggered when a new case starts.*
++
+As case definition is an ad hoc process definition, it does not require an explicit start node. Nodes that have no incoming connections and are marked as `Adhoc Autostart` and are automatically triggered when an instance is started.
++
+By default, the case definition designer includes a `Milestone` object configured as `Adhoc autostart` in the palette. Modify this object or replace it with another work item, such as a user task or script task to be triggered when a new case is started.
++
+In the IT Orders example, the `Prepare hardware spec` user task and the `Milestone 1: Order placed` milestones are `Adhoc autostart`, and are automatically triggered when an instance is started by a request being made for new IT hardware.
+
+. *Define the `Place order` subprocess.*
++
+In the IT Orders example, the `place-order` process is a separate business process that is carried out by the supplier. This is a reusable process that occurs during the course of case execution. 
+.. From the project menu, click *Add Asset* -> *Business Process* to create a new business process. Define the name and package for the new process and click *Ok*. 
+.. Define the process that is a subprocess within the case. For example, the IT Orders `Place order` process is a simple user task that applies to the supplier group and receives the relevant order data and case variables directly from the case file.
+
+. *Define milestones*
++
+Add a milestone to the case definition by selecting `Milestone` from the *Object Library* and dragging it on to the case designer. The following milestones are configured in the IT Orders sample project:
++
+* `Milestone 1: Order placed` is `Adhoc autostart`. This milestone is in a wait state until the condition is met. The condition for this milestone is that a case file variable named `ordered` exists with the value `true`. A script task then sends a notification that the hardware order has been placed.
+* `Milestone 2: Order shipped` is triggered by a signal event once the order is ready to be sent. A script task sends a notification once the order is shipped  and added to the tracking system.
+* `Milestone 3: Delivered to customer` is triggered by a signal event once the order has successfully shipped to the customer. Once this milestone is reached, a `Customer satisfaction survey` is sent. 
++
+For more information about milestones, see <<case-management-milestones-con-{context}>>.
+
+The IT Orders case can be closed once all milestone sequences are completed. However, due to the ad hoc nature of cases, the case could be reopened if, for example, the order was never received by the customer or the delivery is faulty. Tasks can be re-triggered or added to the case definition as required, even during runtime.
+
+For more information about ad hoc processes, see <<case-management-adhoc-con-{context}>>.

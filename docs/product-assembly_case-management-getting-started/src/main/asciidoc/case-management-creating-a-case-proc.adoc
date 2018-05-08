@@ -7,25 +7,15 @@ A case project is a type of project in {CENTRAL} that is configured for case man
 * Case and documents marshallers are configured. These marshallers serialize case file data across the entire case.
 * `WorkDefinition.wid` files are created in the project and its packages when a new case definition is created to ensure case related nodes such as `Milestone` are available in the case definition design palette.
 
-.Prerequisite
-{PRODUCT} is installed and {CENTRAL} has been deployed in a web browser.
+
 
 .Procedure
 
 . In the *myteam* space in {CENTRAL}, click the down arrow next to the *Add Project* button and select *Case project*.
 
-. In the *New Project* wizard, complete the required project information, that is, the name and location where the case file is to be created.
-+
-Click *Finish*.
+. In the *New Project* wizard, complete the required project information and click *Finish*.
 +
 ** To check that the case project has been set up correctly, click *Settings* -> *Deployments*. Verify that the *Runtime Strategy* is set to `Per case` and that the *Marshalling Strategies* include a case marshaller and a documents marshaller.
-
-. Create a case process using the case designer. The case designer appears the same as the business process designer, however it also includes a number of case management-specific objects. To open the designer and create a new case process, click *Add Asset* in the upper-right corner of the project perspective and select *Case definition*.
-+
-By default, the required objects are included in the case designer. The designer creates a `WorkDefinition` file that includes everything you need to start designing a case process. 
- 
-** Verify that the case designer includes the following objects by either checking the *Object Library* dock on the left side of the case designer, or by checking the `WorkDefinition` file under *Work Item Definitions* in the *Project Explorer* window on the left side of the {CENTRAL} workbench.
-
 
 
 
