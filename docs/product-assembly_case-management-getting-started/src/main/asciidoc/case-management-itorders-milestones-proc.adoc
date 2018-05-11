@@ -1,2 +1,11 @@
-[id='']
-= TODO
+[id='case-management-itorders-milestones-proc-{context}']
+= Configuring milestones for IT Orders 
+
+The following milestones are configured in the IT Orders sample project:
+
+* `Hardware spec ready` is reached when the required hardware specification document is completed. This is configured using the `org.kie.api.runtime.process.CaseData(data.get("hwSpec") != null)` condition. 
+* `Manager decision` is reached once the `managerDecision` variable has been given a response. This is configured using the `org.kie.api.runtime.process.CaseData(data.get("managerDecision") != null)` variable.
+* `Milestone 1: Order placed` is `Adhoc autostart`. This milestone is in a wait state until the condition is met. The condition for this milestone is that a case file variable named `ordered` exists with the value `true`. A script task then sends a notification that the hardware order has been placed.
+* `Milestone 2: Order shipped` is triggered by a signal event once the order is ready to be sent. The condition for this milestone is that a case file variable named `shipped` is `true`. Once completed, the `Send to tracking system` script is executed.
+* `Milestone 3: Delivered to customer` is triggered by a signal event once the order has successfully shipped to the customer. The condition for this milestone is that a case file variable named `delivered` is `true`. Once completed, a `Customer satisfaction survey` task is created. 
+

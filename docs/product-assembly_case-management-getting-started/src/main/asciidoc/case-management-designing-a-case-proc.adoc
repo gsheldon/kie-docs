@@ -55,8 +55,21 @@ In the IT Orders sample project, you can see that certain variables are identifi
 For more information about the case file, see <<case-management-case-file-con-{context}>>.
 
 . *Define the roles involved in the case.*
+.. Click image:3898.png[] to open the *Properties* menu on the right side of the designer and open the *Editor for Case Roles*. 
+.. Click *Add Case Role* to add case roles.  
 +
-Open the properties panel and click the down arrow next to `Variable Definitions` to open the `Editor for Variable Definitions`.For more information about roles, see <<case-management-roles-con-{context}>>.
+The IT Orders sample case management project includes the following roles:
++
+
+.ITOrders Case Roles
+image::case_roles.png[Case Roles]
+
++
+* `owner` - the employee who is making the hardware order request. There can be only one of these roles.
+* `manager` - the employee's manager; the person who will approve or deny the requested hardware. There is only one manager in the IT Orders project.
+* `supplier` - the available suppliers of IT hardware in the system. There is usually more than one supplier.
++
+For more information about creating case roles, see <<case-management-roles-con-{context}>>.
 
 . *Define what work item will be triggered when a new case starts.*
 +
@@ -74,11 +87,12 @@ In the IT Orders example, the `place-order` process is a separate business proce
 
 . *Define milestones*
 +
-Add a milestone to the case definition by selecting `Milestone` from the *Object Library* and dragging it on to the case designer. The following milestones are configured in the IT Orders sample project:
+Add a milestone to the case definition by selecting `Milestone` from the *Object Library* and dragging it on to the case designer. 
+.. Create an evaluation condition for the milestone based on a case file variable that determines when the milestone is activated. From the *Properties* menu on the right, open the *Data Inputs and Assignments* window and click *Add* to add a new condition.
 +
-* `Milestone 1: Order placed` is `Adhoc autostart`. This milestone is in a wait state until the condition is met. The condition for this milestone is that a case file variable named `ordered` exists with the value `true`. A script task then sends a notification that the hardware order has been placed.
-* `Milestone 2: Order shipped` is triggered by a signal event once the order is ready to be sent. A script task sends a notification once the order is shipped  and added to the tracking system.
-* `Milestone 3: Delivered to customer` is triggered by a signal event once the order has successfully shipped to the customer. Once this milestone is reached, a `Customer satisfaction survey` is sent. 
+In the IT Orders case, `Milestone 1: Order placed` depends on the `org.kie.api.runtime.process.CaseData(data.get("ordered") == true)` variable. This means that a case variable named `ordered` exists with the value `true`, and it is configured on the milestone in the following way:
++
+image::milestone-evaluation-condition.png[Milestone evaluation condition configuration]
 +
 For more information about milestones, see <<case-management-milestones-con-{context}>>.
 
