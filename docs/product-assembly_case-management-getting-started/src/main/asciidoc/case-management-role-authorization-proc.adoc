@@ -28,8 +28,8 @@ Use the following procedure to start a new IT Orders case using the REST API.
 {
   "case-data" : {  },
   "case-user-assignments" : {
-    "owner" : "maciek",
-    "manager" : "maciek"
+    "owner" : "cami",
+    "manager" : "cami"
   },
   "case-group-assignments" : {
     "supplier" : "IT"
@@ -37,7 +37,7 @@ Use the following procedure to start a new IT Orders case using the REST API.
 }
 ----
 
-This starts an empty case with defined roles. Two of the roles are user assignments (`owner` and `manager`) and third is a group assignment (`supplier`).
+This starts a new case with defined roles, as well as autostart activities, which are started and ready to be worked on. Two of the roles are user assignments (`owner` and `manager`) and third is a group assignment (`supplier`).
 
 Once successfully started, the case instance returns the case ID: `IT-0000000001`. 
 

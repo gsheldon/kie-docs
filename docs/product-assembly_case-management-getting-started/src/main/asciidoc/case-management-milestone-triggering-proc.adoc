@@ -1,2 +1,5 @@
-[id='']
-= TODO
+[id='case-management-milestone-triggering-{context}']
+= Milestone triggering
+
+Case milestones can be triggered manually using a signal in the case design, or they can be configured to start automatically when a case instance starts.
+
