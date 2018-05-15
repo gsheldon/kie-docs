@@ -10,7 +10,7 @@ Click image:3898.png[] to open the *Properties* menu on the right side of the de
 image::case_roles.png[Case Roles]
 +
 * `owner` - the person requesting the hardware. There can be only one of these roles.
-* `manager` - the person who will approve or deny the requested hardware. There is only one manager in the IT Orders project.
+* `manager` - the employee's manager; the person who will approve or deny the requested hardware. The role cardinality is set to `1`, which means that only one person or group can be assigned to this role.
 * `supplier` - a set of people who can order and deliver the requested and approved hardware. There is usually more than one supplier.
 +
 

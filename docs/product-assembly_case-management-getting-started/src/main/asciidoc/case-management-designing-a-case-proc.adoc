@@ -66,7 +66,7 @@ image::case_roles.png[Case Roles]
 
 +
 * `owner` - the employee who is making the hardware order request. There can be only one of these roles.
-* `manager` - the employee's manager; the person who will approve or deny the requested hardware. There is only one manager in the IT Orders project.
+* `manager` - the employee's manager; the person who will approve or deny the requested hardware. The role cardinality is set to `1`, which means that only one person or group can be assigned to this role.
 * `supplier` - the available suppliers of IT hardware in the system. There is usually more than one supplier.
 +
 For more information about creating case roles, see <<case-management-roles-con-{context}>>.
@@ -88,7 +88,7 @@ In the IT Orders example, the `place-order` process is a separate business proce
 . *Define milestones*
 +
 Add a milestone to the case definition by selecting `Milestone` from the *Object Library* and dragging it on to the case designer. 
-.. Create an evaluation condition for the milestone based on a case file variable that determines when the milestone is activated. From the *Properties* menu on the right, open the *Data Inputs and Assignments* window and click *Add* to add a new condition.
+.. Create an evaluation condition for the milestone based on a case file variable that determines when the milestone is completed. From the *Properties* menu on the right, open the *Data Inputs and Assignments* window and click *Add* to add a new condition.
 +
 In the IT Orders case, `Milestone 1: Order placed` depends on the `org.kie.api.runtime.process.CaseData(data.get("ordered") == true)` variable. This means that a case variable named `ordered` exists with the value `true`, and it is configured on the milestone in the following way:
 +
