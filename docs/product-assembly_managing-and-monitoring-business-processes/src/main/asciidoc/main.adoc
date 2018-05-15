@@ -1,0 +1,45 @@
+[id='assembly_managing-and-monitoring-business-processes']
+
+include::product-shared-docs/document-attributes.adoc[]
+
+= Managing and monitoring business processes
+// Context attribute is assembly specific and enables module reuse between assemblies.
+:imagesdir: topics/product-shared-docs/images
+:context: business-processes-getting-started
+include::product-shared-docs/author-group.adoc[]
+
+// Purpose statement for the assembly
+As a process administrator, you can use {CENTRAL} in {PRODUCT} manage and monitor process instances and tasks. 
+
+.Prerequisites
+* Installed {EAP_LONG} 7.1.0. See  https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html-single/installation_guide/[_Red Hat JBoss EAP 7.1.0 Installation Guide_].
+* Installed {PRODUCT}. For more information, see the {URL_INSTALLING_DM_ON_PREMISE}[{INSTALLING_DM_ON_PREMISE}].
+* {PRODUCT} is running and you can log in to {CENTRAL} with the `admin` role. For more information, see the {URL_INSTALLING_DM_ON_PREMISE}[{INSTALLING_DM_ON_PREMISE}].
+
+// Modules - concepts, procedures, refs, etc.
+////
+1. Overview of doc contents and purpose statement
+include::
+1.1. Define the user (Patrick persona)
+2. Managing process instances
+
+include::product-administration-and-configuration-guide/chap-persistence.adoc
+include::product-administration-and-configuration-guide/chap-logging.adoc
+
+2.1. Executing a process instance
+2.2. Modifying a process instance
+2.3. Aborting/stopping a process instance
+3. Migrating a process (Note from Cristiano: Just to clarify, 3. Migrating a process, is relevant to this area, but it is something that is done at the technical level, not something a user would be able to achieve purely from a UI set of actions. Which makes me think that should be removed from the context of getting a process admin up to speed. Sounds that is something that a citizen developer would do.)
+3.1. Prioritizing process instance migration
+3.2. Verifying migrated process instance state
+4. Overview of managing and tracking process instances - Assuming here that we are not only referring to migrated process instances
+4.1. Tracking process instance states
+
+include::product-administration-and-configuration-guide/kie-server-accessing-accessing-runtime-data-proc.adoc
+4.2. Monitoring process status
+
+include::product-administration-and-configuration-guide/sect-using-server-templates.adoc
+4.3. Verifying process instance status/state
+////
+// Versioning info
+include::product-shared-docs/versioning-information.adoc[]
