@@ -44,7 +44,7 @@ include::product-user-guide/case-management-stages-con.adoc[leveloffset=+1]
 // include::case-management-stage-activation-and-completion-conditions-proc.adoc[leveloffset=+2]
 
 include::product-user-guide/case-management-milestones-con.adoc[leveloffset=+1]
-// include::case-management-milestone-triggering-proc.adoc[leveloffset=+2]
+include::case-management-milestone-triggering-proc.adoc[leveloffset=+2]
 include::case-management-itorders-milestones-proc.adoc[leveloffset=+2]
 
 include::product-user-guide/case-management-comments-con.adoc[leveloffset=+1]
