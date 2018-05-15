@@ -33,7 +33,7 @@ include::case-management-designing-a-case-proc.adoc[leveloffset=+1]
 
 include::product-user-guide/case-management-roles-con.adoc[leveloffset=+1]
 // include::case-management-itorders-roles-proc.adoc[leveloffset=+2]
-// include::case-management-role-authorization-proc.adoc[leveloffset=+2]
+include::case-management-role-authorization-proc.adoc[leveloffset=+2]
 
 include::product-user-guide/case-management-adhoc-con.adoc[leveloffset=+1]
 // include::case-management-itorders-adhoc-tasks-proc.adoc[leveloffset=+2]
