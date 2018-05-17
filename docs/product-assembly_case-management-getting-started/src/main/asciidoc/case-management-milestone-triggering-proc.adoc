@@ -3,8 +3,6 @@
 
 Case milestones can be triggered manually using a signal in the case design, or they can be configured to start automatically when a case instance starts.
 
-Milestones are configured as `Adhoc autostart` by default in the case designer. 
-
 .Prerequisite
 
 * A case project has been created in {CENTRAL}.
@@ -18,10 +16,10 @@ image::milestone.png[Milestone]
 +
 . With the milestone node selected, click image:3897.png[left arrows] to open the *Properties* panel on the right.
 . Open the *Assignments* to add a completion condition. Milestones include a `condition` parameter by default. 
-. To define the completion condition to for the milestone, select a case file variable from the list under *Source*, or select `Constant...` from the list.
+. To define the completion condition to for the milestone, select `Constant...` from the list. The condition must be provided using the Drools syntax. (For examples, see <<case-management-itorders-milestones-ref-{context}>>).
 . Configure the `Adhoc autostart` property. 
 +
-* Set this property to `true` for milestones that are required to start automatically when a case instance starts. Milestones are `true` by default.
+* Set this property to `true` for milestones that are required to start automatically when a case instance starts. 
 +
 * Set this property to `false` for milestones that are to be triggered by a signal event.
 . *(Optional)* Configure a signal event to trigger a milestone once a task has been completed. 
