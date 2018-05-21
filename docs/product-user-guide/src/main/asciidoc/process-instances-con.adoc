@@ -1,19 +1,20 @@
 [id='_sect_process_instances']
 = Process Instances
 
-You can create new process instances from the *Process Definition List*, from the *Process Definition Detail* view or from the *Process Instance* view. When you create a new Process Instance, a new window opens that requires you to provide information required by the process to be started. After you provide the required information and click *Submit*, the instance is created and the details of the process instance are displayed in *Process Instance Details* on the right.
+You can create new process instances in two ways:
+
+* Click *Menu* -> *Manage* -> *Process Definitions*. Select the process definition for which you want to start a new process instance and click the *New Process Intance* button in the upper-right corner.
+* Click *Menu -> *Manage* -> *Process Instances*. Click the *New Process Instance* button in the upper-right corner and select the process definition for which you want to start a new process instance from the drop-down list. 
+
+Provide any information required to start a new process instance. Click *Submit* to create a new process instance. The new process instance appears in the list under the *Manage Process Instances* view.
 
 You can further manage the instance during runtime, monitor its execution, and work with the tasks the instance produces for users with the proper roles assigned.
 
 Additionally, {CENTRAL} enables you to easily sort and filter a list of tasks for any given process. You can create custom filters that enable you to define queries by user, business attributes (such as amount, customer segmentation), Process ID, correlation key, and so on.
 
 You can view the list of all the running process instances in the Process Instance List under *Menu* -> *Manage* -> *Process Instances*.
-The process instances view comprises two main sections:
 
-* Process Instance Lists
-* Process Instance Details
-
-The process instance list displays the process instances. In this view, you can customize which columns  are displayed, then number of rows displayed per page, the name of the tabs, and the title description.
+The process instance list displays the process instances. In this view, you can customize which columns are displayed, then number of rows displayed per page, the name of the tabs, and the title description.
 The views are available as tabs. When you click a tab, the associated parameters are applied to the data grid and the corresponding process instances are listed. You can remove the default tabs and add your own with the required filter criteria.
 The Process Instances view also has features such as auto refresh and restore default views. Auto refresh enables you to define how frequently the data grid refreshes. You can select a different value (1, 5 or 10 minutes), or disable this feature by clicking the *Disable* button:
 

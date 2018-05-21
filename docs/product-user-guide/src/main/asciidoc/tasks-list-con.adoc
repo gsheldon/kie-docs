@@ -1,5 +1,7 @@
 [id='tasks-list-con-{context}']
-= Tasks List
+= Task Inbox
+
+The Task Inbox can be accessed in {CENTRAL} by clicking *Menu* -> *Track* -> *Task Inbox*.
 
 A User Task represents a piece of work the given user can claim and perform.
 User Tasks can be handled within the *Tasks* page of the {CENTRAL}: the view displays the Task List for the given user.

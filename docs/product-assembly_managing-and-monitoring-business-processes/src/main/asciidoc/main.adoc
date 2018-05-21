@@ -5,7 +5,7 @@ include::product-shared-docs/document-attributes.adoc[]
 = Managing and monitoring business processes
 // Context attribute is assembly specific and enables module reuse between assemblies.
 :imagesdir: topics/product-shared-docs/images
-:context: business-processes-managing-monitoring
+:context: managing-and-monitoring-processes
 include::product-shared-docs/author-group.adoc[]
 
 // Purpose statement for the assembly
@@ -20,10 +20,7 @@ As a process administrator who needs to easily monitor the state of all running 
 
 
 include::product-getting-started-guide/concept_introducing-7.adoc[leveloffset=+1]
-== Managing process instances
-
-////
-user guide
+//userguide
 include::product-user-guide/process-definitions-con.adoc[leveloffset=+1]
 include::product-user-guide/process-instances-con.adoc[leveloffset=+1]
 include::product-user-guide/searching-process-instances-partial-key-proc.adoc[leveloffset=+2]
@@ -34,34 +31,30 @@ include::product-user-guide/process-instance-filtering-proc.adoc[leveloffset=+2]
 
 include::product-user-guide/aborting-process-instances-proc.adoc[leveloffset=+2]
 
-== Signaling Process Instance
 
 include::product-user-guide/signalling-process-instance-from-API-proc.adoc[leveloffset=+2]
 include::product-user-guide/signalling-process-instance-from-central-proc.adoc[leveloffset=+3]
 
 
-== Task Management
-
-The following sections describe the features provided by the options available from *Menu* -> *Track* -> *Task Lists*.
 
 include::product-user-guide/tasks-list-con.adoc[leveloffset=+1]
 include::product-user-guide/task-client-ref.adoc[leveloffset=+2]
 include::product-user-guide/creating-custom-task-filters-proc.adoc[leveloffset=+2]
 include::product-user-guide/advanced-search-task-filtering-proc.adoc[leveloffset=+2]
 
-////
+//enduserguide
 
 include::starting-a-process-instance-from-central-proc.adoc[leveloffset=+1]
 include::modifying-a-process-instance-proc.adoc[leveloffset=+2]
 include::aborting-a-process-instance-proc.adoc[leveloffset=+2]
 
-== Tracking process instance states
+// Tracking process instance states
 include::product-user-guide/chap-process-admin-quick-filtering.adoc[leveloffset=+1]
 include::product-administration-and-configuration-guide/chap-execution-error-management.adoc[leveloffset=+2]
 
-== Monitoring process status
+// Monitoring process status
 include::product-getting-started-guide/concept_monitor.adoc[leveloffset=+1]
-include::product-getting-started-guide/monitoring-proc.adoc[leveloffset=+2]
+// include::product-getting-started-guide/monitoring-proc.adoc[leveloffset=+2]
 include::product-administration-and-configuration-guide/kie-server-accessing-runtime-data-proc.adoc[leveloffset=+2]
 //4.3. Verifying process instance status/state
 
