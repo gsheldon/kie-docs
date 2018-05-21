@@ -41,7 +41,7 @@ If a prefix is set to something else, such as `IT` for example, the following id
 The designer creates a `WorkDefinition` file that includes the work items required for case definition. These appear as usable objects in the case designer *Object Library*, accessible by clicking the image:3898.png[left arrows] in the upper-left corner of the designer.
 + 
 Verify that the case designer includes the `Milestones` and `Cases` objects by either checking the *Object Library* dock on the left side of the case designer, or by checking the `WorkDefinition` file under *Work Item Definitions* in the *Project Explorer* window on the left side of the {CENTRAL} workbench.
-. *Define process level and case level variables.* 
+. Define process level and case level variables.
 +
 Click the image:3897.png[] arrow on the right side of the designer to open the *Properties* panel. Click the down arrow next to `Variable Definitions` to open the `Editor for Variable Definitions`.
 +
@@ -52,7 +52,7 @@ In the IT Orders sample project, you can see that certain variables are identifi
 +
 For more information about the case file, see <<case-management-case-file-con-{context}>>.
 
-. To define the roles involved in the case, click image:3898.png[] to open the *Properties* menu on the right side of the designer and open the *Editor for Case Roles*. Click *Add Case Role* to add case roles.  
+. To define the roles involved in the case, click image:3897.png[] to open the *Properties* menu on the right side of the designer and open the *Editor for Case Roles*. Click *Add Case Role* to add case roles.  
 +
 The IT Orders sample case management project includes the following roles:
 +

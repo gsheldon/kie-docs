@@ -1,2 +1,19 @@
-[id='']
-= TODO
+[id='case-management-defining-a-stage-proc']
+= Defining a stage
+
+A stage can be modeled in BPMN2 using the case designer. Stages are a way of grouping related tasks in a way that clearly define activities that must complete before the next stage of the case commences. 
+
+.Prerequisites
+
+* You have followed the procedure in <<case-management-creating-a-case-proc>> to create a new case in {CENTRAL}.
+* You have started a case definition and defined any other required case nodes described in <<case-management-designing-a-case-proc>>. Stages must be triggered by another node within a case definition, therefore at least one other node must be configured in the designer before the stage can be started.  
+
+.Procedure
+. From the case designer, click image:3897.png[] on the left of the palette to open the *Object Library*. Open the  *Subprocesses* object list and drag and drop an *Ad-Hoc* node onto the design canvas.
+. Re-size the node as required to allow room for the task nodes for the stage. 
+. 
+ 
+Autocomplete - start event or an adhoc autostart task. Once there are no longer any tasks required to be completed then it can autocomplete
+
+.IT Orders project stages example
+image::itorders-stages.png[IT Orders - stages]

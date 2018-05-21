@@ -1,2 +1,2 @@
-[id='']
-= TODO
+[id='case-management-stage-activation-and-completion-conditions-proc']
+= Stage activation and completion conditions
