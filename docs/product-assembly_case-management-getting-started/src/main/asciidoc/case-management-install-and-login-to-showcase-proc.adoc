@@ -1,2 +1,33 @@
-[id='']
-= TODO
+[id='case-management-install-and-login-to-showcase-proc-{context}']
+= Install and login to the Showcase application
+
+The Showcase application is included in the {PRODUCT} {VERSION} distribution in the `add-ons` repository. The purpose of this application is to demonstrate the functionality of case management in {PRODUCT} and allow you to deploy cases created in {CENTRAL}.
+
+.Prerequisite
+* {PRODUCT} is installed and configured with {KIE_SERVER}.
+* {CENTRAL} is installed but not deployed or has been stopped.
+* The following file is downloaded from the https://access.redhat.com[Red Hat Customer Portal]:
+
+`rhpam-7.0.0.GA-add-ons.zip`
+
+.Procedure 
+. Extract the `rhpam-7.0.0.GA-add-ons.zip` file to a temporary directory.
+. In the `rhpam-7.0.0.GA-add-ons/` folder, extract the Showcase file: `rhpam-7.0-case-mgmt-showcase-eap7-deployable.zip`.
+. Copy the contents of the `rhpam-7.0.0.GA-add-ons/rhpam-7.0-case-mgmt-showcase-eap7-deployable/jboss-eap-7.1` directory to `__EAP_HOME__`. When asked to overwrite files or merge directories, select *Yes*.
++
+[WARNING]
+====
+Ensure the names of the {PRODUCT} deployments you are copying do not conflict with your existing deployments in the {EAP} instance
+====
++
+. Add the following system property to your deployment's `__EAP_HOME__/jboss-eap-7.1/standalone/configuration/standalone-full.xml` file:
++
+`<property name="org.jbpm.casemgmt.showcase.url" value="/rhpam-case-mgmt-showcase"/>`
+. Deploy {PRODUCT} using the following command:
++
+`$ __EAP_HOME__/jboss-eap-7.1/bin/standalone.sh --server-config=standalone-full.xml`
+. In a web browser, open the URL `localhost:8080/business-central`.
+. Log in using your {CENTRAL} user credentials.
+. In the upper-right corner in {CENTRAL}, click the *Apps launcher* button to launch the *Case Management Showcase* in a new browser window.
+. Log in to the Showcase application using your {CENTRAL} user credentials.
+
