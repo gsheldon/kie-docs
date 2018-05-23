@@ -1,7 +1,7 @@
 [id='case-management-designing-a-case-proc']
 = Designing a case
 
-Cases are designed using the *Case definition* designer in {CENTRAL}. The case design is the basis of case management and sets out the specific goals and tasks for each case. The design can be added to and modified dynamically during runtime.
+Cases are designed using the *Case definition* designer in {CENTRAL}. The case design is the basis of case management and sets out the specific goals and tasks for each case. The design can be added to and modified dynamically during run time.
 
 To demonstrate how to design a case, {PRODUCT} includes the IT Orders sample project in {CENTRAL}, which includes the following case definition:
 
@@ -92,6 +92,6 @@ image::milestone-evaluation-condition.png[Milestone evaluation condition configu
 * For more information about the milestones in the IT Orders case, see <<case-management-itorders-milestones-ref-{context}>>. 
 * To learn more about milestones, see <<case-management-milestones-con-{context}>>.
 
-The IT Orders case can be closed once all milestone sequences are completed. However, due to the ad hoc nature of cases, the case could be reopened if, for example, the order was never received by the customer or the delivery is faulty. Tasks can be re-triggered or added to the case definition as required, even during runtime.
+The IT Orders case can be closed once all milestone sequences are completed. However, due to the ad hoc nature of cases, the case could be reopened if, for example, the order was never received by the customer or the delivery is faulty. Tasks can be re-triggered or added to the case definition as required, even during run time.
 
 For more information about ad hoc processes, see <<case-management-adhoc-con-{context}>>.
