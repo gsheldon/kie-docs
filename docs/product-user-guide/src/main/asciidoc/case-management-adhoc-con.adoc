@@ -1,13 +1,13 @@
 [id='case-management-adhoc-con-{context}']
 = Ad hoc and dynamic tasks
 
-Case management allows tasks to be carried out in an ad hoc way, rather than following a strict end to end process. Tasks can also be added to a case dynamically during runtime when required.
+You can use case management to carry out tasks in an ad hoc way, rather than following a strict end-to-end process. Tasks can also be added to a case dynamically during run time when required.
 
-Ad hoc tasks are predefined in the case modeling phase. They have global and local stage availability, however, ad hoc tasks are optional and may or may not be worked on during a case. Because of this, ad hoc tasks do not have any incoming nodes and they must be triggered by a signal event or by Java API to be available to be worked on during a case.
+Ad hoc tasks are predefined in the case modeling phase. Ad hoc tasks are optional and may or may not be worked on during a case and therefore must be triggered by a signal event or by Java API to be available to be worked on during a case.
 
-Dynamic tasks are defined in the case runtime execution and are not present in the case definition model. Dynamic tasks address specific needs that arise during the case. They can be added to the case and worked on at any time using a case application, as demonstrated in the {PRODUCT} Showcase application.
+Dynamic tasks are defined in the case run time execution and are not present in the case definition model. Dynamic tasks address specific needs that arise during the case. They can be added to the case and worked on at any time using a case application, as demonstrated in the {PRODUCT} Showcase application. Dynamic tasks can also be added by Java and Remote API calls.
 
-Dynamic and ad hoc tasks can be user or service activities.
+Dynamic tasks can be user or service activities, while ad hoc tasks can be any type of task.
 
 Dynamic processes are any process from a case project.
 
