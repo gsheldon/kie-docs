@@ -19,20 +19,32 @@ As a process administrator who needs to easily monitor the state of all running 
 // Modules - concepts, procedures, refs, etc.
 
 
-include::product-getting-started-guide/concept_introducing-7.adoc[leveloffset=+1]
+include::product-getting-started-guide/intro7-con.adoc[leveloffset=+1]
 //userguide
+
+include::product-getting-started-guide/new-project-proc.adoc[leveloffset=+1]
+
+
+include::product-getting-started-guide/monitor-con.adoc[leveloffset=+1]
+include::product-getting-started-guide/monitoring-proc.adoc[leveloffset=+2]
 include::product-user-guide/process-definitions-con.adoc[leveloffset=+1]
+
 include::product-user-guide/process-instances-con.adoc[leveloffset=+1]
+include::starting-a-process-instance-from-central-proc.adoc[leveloffset=+1]
+
 include::product-user-guide/searching-process-instances-partial-key-proc.adoc[leveloffset=+2]
 include::product-user-guide/searching-process-instances-business-data-proc.adoc[leveloffset=+2]
 include::product-user-guide/creating-new-process-instance-list-proc.adoc[leveloffset=+2]
 
 include::product-user-guide/process-instance-filtering-proc.adoc[leveloffset=+2]
+include::modifying-a-process-instance-proc.adoc[leveloffset=+2]
+
+include::aborting-a-process-instance-proc.adoc[leveloffset=+2]
 
 include::product-user-guide/aborting-process-instances-proc.adoc[leveloffset=+2]
 
 
-include::product-user-guide/signalling-process-instance-from-API-proc.adoc[leveloffset=+2]
+// include::product-user-guide/signalling-process-instance-from-API-proc.adoc[leveloffset=+2]
 include::product-user-guide/signalling-process-instance-from-central-proc.adoc[leveloffset=+3]
 
 
@@ -44,19 +56,12 @@ include::product-user-guide/advanced-search-task-filtering-proc.adoc[leveloffset
 
 //enduserguide
 
-include::starting-a-process-instance-from-central-proc.adoc[leveloffset=+1]
-include::modifying-a-process-instance-proc.adoc[leveloffset=+2]
-include::aborting-a-process-instance-proc.adoc[leveloffset=+2]
 
 // Tracking process instance states
 include::product-user-guide/chap-process-admin-quick-filtering.adoc[leveloffset=+1]
 include::product-administration-and-configuration-guide/chap-execution-error-management.adoc[leveloffset=+2]
 
-// Monitoring process status
-include::product-getting-started-guide/concept_monitor.adoc[leveloffset=+1]
-// include::product-getting-started-guide/monitoring-proc.adoc[leveloffset=+2]
-include::product-administration-and-configuration-guide/kie-server-accessing-runtime-data-proc.adoc[leveloffset=+2]
-//4.3. Verifying process instance status/state
+
 
 
 
