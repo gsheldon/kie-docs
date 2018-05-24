@@ -5,4 +5,4 @@ The Showcase application is included in the {PRODUCT} distribution to demonstrat
 
 Showcase must be installed in addition to the {CENTRAL} application and {KIE_SERVER}. The Showcase application is required to start new case instances, however the case work is still performed in {CENTRAL}. 
 
-Once a case instance is created and being worked on, you can monitor the case in the Showcase by opening the case *Overview* page. 
+After a case instance is created and is being worked on, you can monitor the case in the Showcase by opening the case *Overview* page. 

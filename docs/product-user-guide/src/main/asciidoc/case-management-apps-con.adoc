@@ -1,7 +1,7 @@
 [id='case-management-case-apps-con-{context}']
 = Case apps
 
-A case app is a tailored {PRODUCT} case management application placed in the business context. This helps to:
+A case app is a tailored {PRODUCT} case management application placed in the business context. This provides the following benefits:
 
 * Avoid a generic approach to case management.
 * Provide a domain aspect to the environment that end users will be able to locate easily.
@@ -10,10 +10,10 @@ A case app is a tailored {PRODUCT} case management application placed in the bus
 
 A case app takes the following into consideration:
 
-* The data being exchanged throughout the case.
-* The actors involved in the case.
-* The stages within a case to allow work to be partitioned and eliminates duplication.
-* Progress tracking based on business conditions, such as milestones.
+* The data being exchanged throughout the case
+* The actors involved in the case
+* The stages within a case to allow work to be partitioned and eliminates duplication
+* Progress tracking based on business conditions, such as milestones
 
 A case app can be built up from the following components:
 

@@ -1,7 +1,7 @@
 [id='case-management-itorders-milestones-ref-{context}']
 = IT Orders case milestones
 
-Milestones are configured in the case definition designer by adding a `Milestone` node to the design palette.
+Milestones are configured in the case definition designer by adding a milestone node to the design palette.
 
 The following milestones are configured in the IT Orders sample project:
 
@@ -13,7 +13,7 @@ This milestone is reached when the required hardware specification document is c
 `Adhoc autostart` is enabled for this milestone.
 
 `Manager decision`::
-This milestone is reached once the `managerDecision` variable has been given a response. It is configured using the following condition:
+This milestone is reached when the `managerDecision` variable has been given a response. It is configured using the following condition:
 +
 `org.kie.api.runtime.process.CaseData(data.get("managerDecision") != null)`
 +
@@ -37,7 +37,7 @@ The condition for this milestone is that a case file variable named `shipped` is
 +
 The `Send to tracking system` script is executed when the condition is met.
 +
-`Adhoc autostart` is not enabled for this milestone. Instead, it is triggered by a signal event once the order is ready to be sent.
+`Adhoc autostart` is not enabled for this milestone. Instead, it is triggered by a signal event when the order is ready to be sent.
 
 `Milestone 3: Delivered to customer`::
 The condition for this milestone is that a case file variable named `delivered` is `true`. This is configured using the following condition:
@@ -46,7 +46,7 @@ The condition for this milestone is that a case file variable named `delivered` 
 +
 A `Customer satisfaction survey` task is created when the condition is met. 
 +
-`Adhoc autostart` is not enabled for this milestone. Instead, it is triggered by a signal event once the order has successfully shipped to the customer. 
+`Adhoc autostart` is not enabled for this milestone. Instead, it is triggered by a signal event after the order has successfully shipped to the customer. 
 
 
 

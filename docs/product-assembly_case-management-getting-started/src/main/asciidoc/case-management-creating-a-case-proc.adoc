@@ -14,8 +14,9 @@ A case project is a type of project in {CENTRAL} that is configured for case man
 . In the *MySpace* space in {CENTRAL}, click the down arrow next to the *Add Project* -> *Case project*.
 
 . In the *New Project* wizard, complete the required project information and click *Finish*.
-+
-To check that the case project has been set up correctly, click *Settings* -> *Deployments*. Verify that the *Runtime Strategy* is set to `Per case` and that the *Marshalling Strategies* include a case marshaller and a documents marshaller.
+
+. To check that the case project has been set up correctly, click *Settings* -> *Deployments*. 
+. Verify that the *Runtime Strategy* is set to `Per case` and that the *Marshalling Strategies* include a case marshaller and a documents marshaller.
 
 
 

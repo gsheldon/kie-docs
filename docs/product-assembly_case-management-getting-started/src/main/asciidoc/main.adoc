@@ -13,14 +13,14 @@ include::product-shared-docs/author-group.adoc[]
 
 As a case worker or process administrator, you can use case management to create or manage unpredictable and ad hoc processes.
 
-Case management differs from Business Process Management (BPM) in that it focuses on the actual data being handled throughout the case and less on the sequence of steps taken to complete a goal. Case data is the most important piece of information in case handling, while business context and decision-making is in the hands of the human case worker.
+Case management differs from business process management (BPM) in that it focuses on the actual data being handled throughout the case and less on the sequence of steps taken to complete a goal. Case data is the most important piece of information in case handling, while business context and decision-making is in the hands of the human case worker.
 
 Use this document to get started with case management while referring to the IT Orders sample project in {CENTRAL}. Deploy the project in {CENTRAL} to view and interact with the case assets described in this tutorial, or recreate the project yourself. 
 
 
 .Prerequisites
 
-* {EAP_LONG} 7.1.0 installed. See  https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html-single/installation_guide/[_Red Hat JBoss EAP 7.1.0 Installation Guide_].
+* {EAP_LONG} 7.1.0 is installed. For installation information, see the https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html-single/installation_guide/[_Red Hat JBoss EAP 7.1.0 Installation Guide_].
 * {PRODUCT} is installed and configured with {KIE_SERVER}. For more information see _Getting started with {PRODUCT}_.
 //xreflink 
 * {PRODUCT} is running and you can log in to {CENTRAL} with the `kie-server` and `user` roles. 
@@ -55,7 +55,7 @@ include::product-user-guide/case-management-comments-con.adoc[leveloffset=+1]
 include::product-user-guide/case-management-apps-con.adoc[leveloffset=+1]
 include::case-management-showcase-application-con.adoc[leveloffset=+1]
 include::case-management-install-and-login-to-showcase-proc.adoc[leveloffset=+2]
-include::case-management-deploy-itorders-in-showcase-proc.adoc[leveloffset=+2]
+include::case-management-starting-itorders-in-showcase-proc.adoc[leveloffset=+2]
 
 // include::case-management-close-case-proc.adoc[leveloffset=+1]
 // include::case-management-cancel-case-proc.adoc[leveloffset=+1]
