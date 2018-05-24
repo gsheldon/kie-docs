@@ -1,7 +1,7 @@
 [id='case-management-designing-a-case-proc']
 = Designing a case
 
-Cases are designed using the *Case definition* designer in {CENTRAL}. The case design is the basis of case management and sets out the specific goals and tasks for each case. The design can be added to and modified dynamically during run time.
+Cases are designed using the *Case definition* designer in {CENTRAL}. The case design is the basis of case management and sets out the specific goals and tasks for each case. The case flow can be modified dynamically during run time by adding dynamic tasks or processes.
 
 To demonstrate how to design a case, {PRODUCT} includes the IT Orders sample project in {CENTRAL}, which includes the following case definition:
 
@@ -36,11 +36,11 @@ If a prefix is set to something else, such as `IT` for example, the following id
 `IT-0000000003`
 
 +
-. Click *Ok* to open the case designer.
+. Click *Ok* to open the process designer.
 +
-The designer creates a `WorkDefinition` file that includes the work items required for case definition. These appear as usable objects in the case designer *Object Library*, accessible by clicking the image:3898.png[left arrows] in the upper-left corner of the designer.
+The designer creates a `WorkDefinition` file that includes the work items required for case definition. These appear as usable objects in the process designer *Object Library*, accessible by clicking the image:3898.png[left arrows] in the upper-left corner of the designer.
 + 
-Verify that the case designer includes the `Milestones` and `Cases` objects by either checking the *Object Library* dock on the left side of the case designer, or by checking the `WorkDefinition` file under *Work Item Definitions* in the *Project Explorer* window on the left side of {CENTRAL}.
+Verify that the process designer includes the `Milestones` and `Cases` objects by either checking the *Object Library* dock on the left side of the process designer, or by checking the `WorkDefinition` file under *Work Item Definitions* in the *Project Explorer* window on the left side of {CENTRAL}.
 . Define process level and case level variables.
 +
 Click the image:3897.png[] arrow on the right side of the designer to open the *Properties* panel. Click the down arrow next to `Variable Definitions` to open the `Editor for Variable Definitions`.
@@ -71,7 +71,7 @@ For more information about creating case roles, see <<case-management-roles-con-
 +
 Because case definition is an ad hoc process definition, it does not require an explicit start node. Nodes that have no incoming connections are marked as `Adhoc Autostart` and are automatically triggered when an instance is started.
 +
-By default, the case definition designer includes a `Milestone` object configured as `Adhoc autostart` in the palette. Modify this object or replace it with another work item such as a user task or script task to be triggered when a new case is started.
+By default, the process designer includes a `Milestone` object configured as `Adhoc autostart` in the palette. Modify this object or replace it with another work item such as a user task or script task to be triggered when a new case is started.
 +
 In the IT Orders example, the `Prepare hardware spec` user task and the `Milestone 1: Order placed` milestones are configured as `Adhoc autostart`, and are automatically triggered when an instance is started by a request being made for new IT hardware.
 
@@ -82,7 +82,7 @@ In the IT Orders example, the `place-order` process is a separate business proce
 .. From the project menu, click *Add Asset* -> *Business Process* to create a new business process. Define the name and package for the new process and click *Ok*. 
 .. Define the process that is a subprocess within the case. For example, the IT Orders `Place order` process is a simple user task that applies to the supplier group and receives the relevant order data and case variables directly from the case file.
 
-. Add a milestone to the case definition by selecting `Milestone` from the *Object Library* and dragging it on to the case designer. 
+. Add a milestone to the case definition by selecting `Milestone` from the *Object Library* and dragging it on to the process designer. 
 .. Create an evaluation condition for the milestone based on a case file variable that determines when the milestone is completed. From the *Properties* menu on the right, open the *Data Inputs and Assignments* window and click *Add* to add a new condition.
 +
 In the IT Orders case, the status of `Milestone 1: Order placed` depends on the `org.kie.api.runtime.process.CaseData(data.get("ordered") == true)` variable. This means that a case variable named `ordered` exists with the value `true`, and it is configured on the milestone in the following way:

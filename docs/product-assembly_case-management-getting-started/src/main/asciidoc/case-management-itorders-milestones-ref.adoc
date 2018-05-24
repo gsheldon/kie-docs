@@ -1,7 +1,7 @@
 [id='case-management-itorders-milestones-ref-{context}']
 = IT Orders case milestones
 
-Milestones are configured in the case definition designer by adding a milestone node to the design palette.
+Milestones are configured in the process designer by adding a milestone node to the design palette.
 
 The following milestones are configured in the IT Orders sample project:
 

@@ -9,7 +9,7 @@ Ad hoc tasks are optional tasks that are configured in a case definition. Becaus
 * A case definition has been created.
 
 .Procedure 
-. In the case designer, click image:3898.png[right arrows] to open the *Object Library* on the left of the design palette.
+. In the process designer, click image:3898.png[right arrows] to open the *Object Library* on the left of the design palette.
 . From the list, select a user or service task that you want to add to the case design as an ad hoc task. 
 +
 For example, in the IT Orders sample project, the `Order rejected` user task is an ad hoc task that would only be performed if the request for new hardware is denied by the manager. 
