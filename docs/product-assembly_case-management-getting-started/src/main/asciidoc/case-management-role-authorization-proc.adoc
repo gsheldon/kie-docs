@@ -43,4 +43,4 @@ After the case instance is successfully started, the case instance returns the c
 
 
 
-// For information about how to start a new case instance using the Showcase application, see TODO: Starting cases using Showcase.
+For information about how to start a new case instance using the Showcase application, see <<case-management-starting-itorders-in-showcase-proc-{context}>>.
