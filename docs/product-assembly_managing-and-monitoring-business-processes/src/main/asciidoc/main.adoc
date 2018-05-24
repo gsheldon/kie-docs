@@ -29,32 +29,21 @@ include::product-getting-started-guide/monitor-con.adoc[leveloffset=+1]
 include::product-getting-started-guide/monitoring-proc.adoc[leveloffset=+2]
 include::product-user-guide/process-definitions-con.adoc[leveloffset=+1]
 
-include::product-user-guide/process-instances-con.adoc[leveloffset=+1]
 include::starting-a-process-instance-from-central-proc.adoc[leveloffset=+1]
-
-include::product-user-guide/searching-process-instances-partial-key-proc.adoc[leveloffset=+2]
+include::process-instance-details-con.adoc[leveloffset=+1]
+include::product-user-guide/process-instance-filtering-proc.adoc[leveloffset=+1]
+// include::product-user-guide/searching-process-instances-partial-key-proc.adoc[leveloffset=+2]
 include::product-user-guide/searching-process-instances-business-data-proc.adoc[leveloffset=+2]
 include::product-user-guide/creating-new-process-instance-list-proc.adoc[leveloffset=+2]
 
-include::product-user-guide/process-instance-filtering-proc.adoc[leveloffset=+2]
-include::modifying-a-process-instance-proc.adoc[leveloffset=+2]
 
-include::aborting-a-process-instance-proc.adoc[leveloffset=+2]
+include::aborting-a-process-instance-from-central-proc.adoc[leveloffset=+2]
 
-include::product-user-guide/aborting-process-instances-proc.adoc[leveloffset=+2]
-
-
-// include::product-user-guide/signalling-process-instance-from-API-proc.adoc[leveloffset=+2]
 include::product-user-guide/signalling-process-instance-from-central-proc.adoc[leveloffset=+3]
 
-
-
-include::product-user-guide/tasks-list-con.adoc[leveloffset=+1]
-include::product-user-guide/task-client-ref.adoc[leveloffset=+2]
+include::product-user-guide/manage-tasks-proc.adoc[leveloffset=+2]
 include::product-user-guide/creating-custom-task-filters-proc.adoc[leveloffset=+2]
 include::product-user-guide/advanced-search-task-filtering-proc.adoc[leveloffset=+2]
-
-//enduserguide
 
 
 // Tracking process instance states

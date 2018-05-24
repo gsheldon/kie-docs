@@ -2,7 +2,7 @@
 = Creating Custom Tasks Filters
 
 
-It is possible to create a custom task filter based on a provided query.
+You can create a custom task filter based on a provided query.
 The newly created filter is then added as a tab to the Tasks List.
 
 The following procedure shows how to create a custom filter which allows you to view a list of tasks with a specified name.

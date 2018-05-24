@@ -91,7 +91,7 @@ include::signalling-process-instance-from-central-proc.adoc[leveloffset=+3]
 
 The following sections describe the features provided by the options available from *Menu* -> *Track* -> *Task Lists*.
 
-include::tasks-list-con.adoc[leveloffset=+1]
+include::tasks-inbox-con.adoc[leveloffset=+1]
 include::task-client-ref.adoc[leveloffset=+2]
 include::creating-custom-task-filters-proc.adoc[leveloffset=+2]
 

@@ -1,6 +1,6 @@
 [id='process-definitions-con-{context}']
 
-= Process Definitions
+= Process definitions
 
 After you have created, configured, and deployed your project comprising your business processes, you can view the list of all the process definitions in *Menu* → *Manage* → *Process Definitions*.
 

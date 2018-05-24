@@ -1,5 +1,5 @@
 [id='sect-process-instance-filtering-{context}']
-= Advanced Search Filtering of Process Instances
+= Advanced search filtering of process instances
 
 Administrators and process administrators can search for process instances using the *Search* tab on the *Process Instances* page.
 
