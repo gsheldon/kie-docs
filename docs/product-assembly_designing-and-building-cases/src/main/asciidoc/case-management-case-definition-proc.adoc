@@ -1,2 +1,5 @@
-[id='']
-= TODO
+[id='case-management-case-definition-proc']
+= Creating a case definition
+
+A case definition represents the flow of the case management project that differs from a normal business process workflow in that it has no clear start node and does not need to be executed sequentially. Case definitions can include nodes that are configured to start automatically when a new case instance is created, as well as ad hoc nodes that are optional and can be triggered during a case when required.
+
