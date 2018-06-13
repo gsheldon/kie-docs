@@ -1,7 +1,7 @@
 [id='case-management-designing-a-case-proc']
 = Designing a case
 
-Cases are designed using the *Case definition* process designer in {CENTRAL}. The case design is the basis of case management and sets out the specific goals and tasks for each case. The case flow can be modified dynamically during run time by adding dynamic tasks or processes.
+Cases are designed using the *Case definition* designer in {CENTRAL}. The case design is the basis of case management and sets out the specific goals and tasks for each case. The case flow can be modified dynamically during run time by adding dynamic tasks or processes.
 
 To demonstrate how to design a case, {PRODUCT} includes the IT Orders sample project in {CENTRAL}, which includes the following case definition:
 
@@ -50,7 +50,14 @@ image::case-variables.png[Editor for IT Orders variables]
 +
 In the IT Orders sample project, you can see that certain variables are identified as `Case File`. A case file variable is stored in the case file itself and promotes reuse of the case file data rather than copying it across multiple process instances. For example, the `hwSpec` variable is available to all processes within the case and is accessible directly from the case file even without an existing process instance. 
 +
-For more information about the case file, see <<case-management-case-file-con-{context}>>.
+For more information about the case file, see 
+ifeval::["{context}" == "case-management-getting-started"]
+<<case-management-case-file-con-case-management-getting-started>>
+endif::[]
+ifeval::["{context}" == "case-management-design"]
+<<case-management-case-file-con-case-management-design>>
+endif::[]
+.
 
 . To define the roles involved in the case, click image:3897.png[] to open the *Properties* menu on the right side of the designer and open the *Editor for Case Roles*. Click *Add Case Role* to add case roles.  
 +
@@ -65,8 +72,14 @@ image::case_roles.png[Case Roles]
 * `manager` - the employee's manager; the person who will approve or deny the requested hardware. The role cardinality is set to `1`, which means that only one person or group can be assigned to this role.
 * `supplier` - the available suppliers of IT hardware in the system. There is usually more than one supplier.
 +
-For more information about creating case roles, see <<case-management-roles-con-{context}>>.
-
+For more information about creating case roles, see 
+ifeval::["{context}" == "case-management-getting-started"]
+<<case-management-roles-con-case-management-getting-started>>
+endif::[]
+ifeval::["{context}" == "case-management-design"]
+<<case-management-roles-con-case-management-design>>
+endif::[]
+.
 . Define the work item to be triggered when a new case starts.
 +
 Because case definition is an ad hoc process definition, it does not require an explicit start node. Nodes that have no incoming connections are marked as `Adhoc Autostart` and are automatically triggered when an instance is started.
@@ -89,13 +102,14 @@ In the IT Orders case, the status of `Milestone 1: Order placed` depends on the 
 +
 image::milestone-evaluation-condition.png[Milestone evaluation condition configuration]
 +
-* For more information about the milestones in the IT Orders case, see
+* For more information about the milestones in the IT Orders case, see 
 ifdef::case-management-getting-started[]
-<<case-management-itorders-milestones-ref-{context}>>. 
-endif::
+<<case-management-itorders-milestones-ref-{context}>>.
+endif::[]
 ifdef::case-management-design[]
 {URL_GETTING_STARTED_CASES}[_{GETTING_STARTED_CASES}_].
-endif::
+endif::[]
+
 * To learn more about milestones, see <<case-management-milestones-con-{context}>>.
 
 The IT Orders case can be closed after all milestone sequences are completed. However, due to the ad hoc nature of cases, the case could be reopened if, for example, the order was never received by the customer or the item is faulty. Tasks can be re-triggered or added to the case definition as required, even during run time.
