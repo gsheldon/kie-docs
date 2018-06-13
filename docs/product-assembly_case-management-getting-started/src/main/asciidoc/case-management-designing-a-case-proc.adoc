@@ -89,7 +89,13 @@ In the IT Orders case, the status of `Milestone 1: Order placed` depends on the 
 +
 image::milestone-evaluation-condition.png[Milestone evaluation condition configuration]
 +
-* For more information about the milestones in the IT Orders case, see <<case-management-itorders-milestones-ref-{context}>>. 
+* For more information about the milestones in the IT Orders case, see
+ifdef::case-management-getting-started[]
+<<case-management-itorders-milestones-ref-{context}>>. 
+endif::
+ifdef::case-management-design[]
+{URL_GETTING_STARTED_CASES}[_{GETTING_STARTED_CASES}_].
+endif::
 * To learn more about milestones, see <<case-management-milestones-con-{context}>>.
 
 The IT Orders case can be closed after all milestone sequences are completed. However, due to the ad hoc nature of cases, the case could be reopened if, for example, the order was never received by the customer or the item is faulty. Tasks can be re-triggered or added to the case definition as required, even during run time.

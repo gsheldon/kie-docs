@@ -1,2 +1,11 @@
-[id='']
-= TODO
+[id='case-management-case-modeling-proc-{context}']
+= Modeling a case definition
+
+A case definition represents the flow of the case management project that differs from a normal business process workflow in that it has no clear start node. A case is event-driven with ad hoc interaction between tasks and processes, rather than following the sequential flow of a business process. Case definitions can include nodes that are configured to start automatically when a new case instance is created, as well as ad hoc nodes that are optional and can be triggered during a case when required.
+
+Cases are modeled using the process design tool, which you can access by opening your project in {CENTRAL} and clicking *Add Asset* -> *Case definition*.
+
+include::product-user-guide/case-management-adhoc-con.adoc[leveloffset=+1]
+include::product-user-guide/case-management-stages-con.adoc[leveloffset=+1]
+include::product-user-guide/case-management-milestones-con.adoc[leveloffset=+1]
+

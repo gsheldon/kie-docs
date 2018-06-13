@@ -20,4 +20,10 @@ Activation conditions can also be configured using a free-form Drools rule to co
 . The `AdHocCompletionCondition` is set to `autocomplete` by default. To change this, open the property editor to define a completion condition using a free-form Drools expression. For example, `org.kie.api.runtime.process.CaseData(data.get("ordered") == true)` to activate the second stage in the example shown previously.
 
 
-For more examples and information about the conditions used in the IT Orders sample project, see <<case-management-itorders-milestones-ref-{context}>>.
+For more examples and information about the conditions used in the IT Orders sample project, see 
+ifdef::case-management-getting-started[]
+<<case-management-itorders-milestones-ref-{context}>>. 
+endif::
+ifdef::case-management-design[]
+{URL_GETTING_STARTED_CASES}[_{GETTING_STARTED_CASES}_].
+endif::
