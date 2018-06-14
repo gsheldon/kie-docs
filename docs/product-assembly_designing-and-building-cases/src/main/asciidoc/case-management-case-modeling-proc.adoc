@@ -8,17 +8,17 @@ Cases are modeled using the process design tool, which you can access by opening
 The following case management features can be included and configured in a case definition:
 
 ifeval::["{context}" == "case-management-getting-started"]
-* xref:case-management-roles-con-case-management-getting-started[Case roles]
-endif::[]
-ifeval::["{context}" == "case-management-design"]
-* xref:case-management-roles-con-case-management-design[Case roles]
-endif::[]
-
-ifeval::["{context}" == "case-management-getting-started"]
 * xref:case-management-adhoc-con-case-management-getting-started[Ad hoc tasks]
 endif::[]
 ifeval::["{context}" == "case-management-design"]
 * xref:case-management-adhoc-con-case-management-design[Ad hoc tasks]
+endif::[]
+
+ifeval::["{context}" == "case-management-getting-started"]
+* xref:case-management-roles-con-case-management-getting-started[Case roles]
+endif::[]
+ifeval::["{context}" == "case-management-design"]
+* xref:case-management-roles-con-case-management-design[Case roles]
 endif::[]
 
 ifeval::["{context}" == "case-management-getting-started"]

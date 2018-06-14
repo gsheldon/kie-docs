@@ -41,7 +41,7 @@ If a prefix is set to something else, such as `IT` for example, the following id
 The designer creates a `WorkDefinition` file that includes the work items required for case definition. These appear as usable objects in the process designer *Object Library*, accessible by clicking the image:3898.png[left arrows] in the upper-left corner of the designer.
 + 
 Verify that the process designer includes the `Milestones` and `Cases` objects by either checking the *Object Library* dock on the left side of the process designer, or by checking the `WorkDefinition` file under *Work Item Definitions* in the *Project Explorer* window on the left side of {CENTRAL}.
-. Define process level and case level variables.
+. Define process-level and case-level variables.
 +
 Click the image:3897.png[] arrow on the right side of the designer to open the *Properties* panel. Click the down arrow next to `Variable Definitions` to open the `Editor for Variable Definitions`.
 +
@@ -68,9 +68,9 @@ The IT Orders sample case management project includes the following roles:
 image::case_roles.png[Case Roles]
 
 +
-* `owner` - the employee who is making the hardware order request. There can be only one of these roles.
-* `manager` - the employee's manager; the person who will approve or deny the requested hardware. The role cardinality is set to `1`, which means that only one person or group can be assigned to this role.
-* `supplier` - the available suppliers of IT hardware in the system. There is usually more than one supplier.
+* `owner`: The employee who is making the hardware order request. There can be only one of these roles.
+* `manager`: The employee's manager; the person who will approve or deny the requested hardware. The role cardinality is set to `1`, which means that only one person or group can be assigned to this role.
+* `supplier`: The available suppliers of IT hardware in the system. There is usually more than one supplier.
 +
 For more information about creating case roles, see 
 ifeval::["{context}" == "case-management-getting-started"]
@@ -96,21 +96,21 @@ In the IT Orders example, the `place-order` process is a separate business proce
 .. Define the process that is a subprocess within the case. For example, the IT Orders `Place order` process is a simple user task that applies to the supplier group and receives the relevant order data and case variables directly from the case file.
 
 . Add a milestone to the case definition by selecting `Milestone` from the *Object Library* and dragging it on to the process designer. 
-.. Create an evaluation condition for the milestone based on a case file variable that determines when the milestone is completed. From the *Properties* menu on the right, open the *Data Inputs and Assignments* window and click *Add* to add a new condition.
+. Create an evaluation condition for the milestone based on a case file variable that determines when the milestone is completed. From the *Properties* menu on the right, open the *Data Inputs and Assignments* window and click *Add* to add a new condition.
 +
 In the IT Orders case, the status of `Milestone 1: Order placed` depends on the `org.kie.api.runtime.process.CaseData(data.get("ordered") == true)` variable. This means that a case variable named `ordered` exists with the value `true`, and it is configured on the milestone in the following way:
 +
 image::milestone-evaluation-condition.png[Milestone evaluation condition configuration]
 +
-* For more information about the milestones in the IT Orders case, see 
-ifdef::case-management-getting-started[]
-<<case-management-itorders-milestones-ref-{context}>>.
+For more information about the milestones in the IT Orders case, see 
+ifeval::["{context}" == "case-management-getting-started"]
+<<case-management-itorders-milestones-ref-case-management-getting-started>>.
 endif::[]
-ifdef::case-management-design[]
+ifeval::["{context}" == "case-management-design"]
 {URL_GETTING_STARTED_CASES}[_{GETTING_STARTED_CASES}_].
 endif::[]
-
-* To learn more about milestones, see <<case-management-milestones-con-{context}>>.
++
+To learn more about milestones, see <<case-management-milestones-con-{context}>>.
 
 The IT Orders case can be closed after all milestone sequences are completed. However, due to the ad hoc nature of cases, the case could be reopened if, for example, the order was never received by the customer or the item is faulty. Tasks can be re-triggered or added to the case definition as required, even during run time.
 
