@@ -1,0 +1,15 @@
+[id='case-management-subcases-proc_{context}']
+= Creating sub cases in case management projects
+
+Subcases give you the flexibility to compose advanced cases that consists of other cases. This means that you can split large and complex cases into multiple layers of abstraction and even multiple case projects. This is similar to splitting a process into multiple subprocesses.
+
+Case definition is set of activities that might happen while the case instance is active. It is completely dynamic and therefore, what is in the definition are not always the only activities that can be invoked in the case instance. Dynamic activities can also be included during run time on an already active case instance.
+
+A case instance is a single instance of a case definition and should encapsulate the given business context. All case instance data is stored in the case file, which is accessible to all process instances that might participate in the given case instance. Each case instance and its case file is completely isolated from the other cases. Only case instance participants can access the case file.
+
+A subcase is another case definition that is invoked from within another case instance or a regular process instance. It has all of the capabilities of a regular case instance:
+
+* It has a dedicated case file.
+* It is isolated from any other case instance.
+* It has its own set of case roles.
+* It has its own case prefix.

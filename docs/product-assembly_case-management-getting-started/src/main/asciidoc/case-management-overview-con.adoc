@@ -36,6 +36,3 @@ Process definition can still be introduced as a supporting construct of the case
 * Milestones
 * Roles
 * Case file
-
-
-
