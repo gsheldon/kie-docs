@@ -3,10 +3,18 @@
 
 You can create a dynamic user task during case run time using the REST API. To create a dynamic user task, the following information must be given:
 
+<<<<<<< HEAD
 * Task name
 * Task description (optional, but recommended)
 * Actors or groups (or both)
 * Input data
+=======
+* task name
+* task description (optional, but recommended)
+* actors
+* groups
+* input data
+>>>>>>> BXMSDOC-2577: dynamic tasks and process with the API
 
 Use the following procedure to create a dynamic user task for the IT Orders sample project available in {CENTRAL} using the Swagger REST API tool. The same endpoint can be used for REST API without Swagger.
 
@@ -29,6 +37,7 @@ endif::[]
 +
 . Click *Try it out* to complete the following parameters:
 +
+<<<<<<< HEAD
 .Parameters
 [cols="40%,60%",options="header"]
 |===
@@ -37,6 +46,10 @@ endif::[]
 |`caseId` | `IT-0000000001`
 |===
 +
+=======
+id:: `itorders`
+caseId:: `IT-0000000001`
+>>>>>>> BXMSDOC-2577: dynamic tasks and process with the API
 body::
 +
 [source]
@@ -61,4 +74,9 @@ This procedure creates a new user task associated with case `IT-000000001`. The 
 
 Depending on the task, a form might be defined to provide a user-friendly UI for the task, which can be looked up by task name. In the IT Orders case, the `RequestManagerApproval` task includes the form `RequestManagerApproval-taskform.form` in its KJAR. 
 
+<<<<<<< HEAD
 After it is created, the task appears in the assignee's *Task Inbox* in {CENTRAL}.
+=======
+Once the task has been created, the task appears in the assignee`s *Task Inbox* in {CENTRAL}.
+
+>>>>>>> BXMSDOC-2577: dynamic tasks and process with the API

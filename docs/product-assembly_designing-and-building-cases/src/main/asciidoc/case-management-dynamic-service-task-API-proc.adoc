@@ -9,7 +9,7 @@ Service tasks are generally less complex than user tasks, although they might ne
 
 You can create a dynamic service task during case run time with the same endpoint as a user task, but with a different body payload.
 
-Use the following procedure use the Swagger REST API to create a dynamic service task for the IT Orders sample project available in {CENTRAL} . The same endpoint can be used for REST API without Swagger.
+Use the following procedure to create a dynamic service task for the IT Orders sample project available in {CENTRAL} using the Swagger REST API tool. The same endpoint can be used for REST API without Swagger.
 
 .Prerequisite 
 You are logged in to {CENTRAL} and an IT Orders case instance has been started using the Showcase application. For more information about using Showcase, see 
