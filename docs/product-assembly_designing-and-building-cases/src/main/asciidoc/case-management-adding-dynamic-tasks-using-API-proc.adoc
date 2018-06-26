@@ -2,6 +2,7 @@
 = Adding dynamic tasks to a case using the API
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 You can add dynamic tasks and processes to a case during run time to address unforeseen changes that can occur during the lifecycle of a case. Dynamic activities are not defined in the case definition and therefore they cannot be signaled the way that a defined ad hoc task or process can.
 
 You can add the following dynamic activities to a case:
@@ -13,29 +14,41 @@ You can add the following dynamic activities to a case:
 Dynamic user and service tasks are added to a case instance and immediately executed. Depending on the nature of a dynamic task, it might start and wait for completion (user task) or directly complete after execution (service task). For dynamic subprocesses, the process engine requires a KJAR containing the process definition for that dynamic process to locate the process by its ID and execute it. This subprocess belongs to the case and has access to all of the data in the case file.
 =======
 Dynamic tasks and processes can be added to a case during run time to address unforeseen changes that can occur during the lifecycle of a case. Dynamic activities are not defined in the case definition and therefore, they cannot be signaled the way that a defined ad hoc task or process can.
+=======
+You can add dynamic tasks and processes to a case during run time to address unforeseen changes that can occur during the lifecycle of a case. Dynamic activities are not defined in the case definition and therefore they cannot be signaled the way that a defined ad hoc task or process can.
+>>>>>>> BXMSDOC-2577: Incorporated SME and peer reviews
 
-The following dynamic activities can be added to a case:
+You can add the following dynamic activities to a case:
 
-* user tasks
-* service tasks (any type that is implemented as a work item)
-* reusable subprocesses 
+* User tasks
+* Service tasks (any type that is implemented as a work item)
+* Reusable subprocesses 
 
+<<<<<<< HEAD
 Dynamic user and service tasks are added to a case instance and immediately executed. Depending on the nature of a dynamic task, it might start and wait for completion (user task) or directly complete after execution (service task). For dynamic subprocesses, the process engine requires a KJAR containing the process definition for that dynamic process in order to locate the process by its ID and execute it. This subprocess belongs to the case and has access to all of the data in the case file.
 >>>>>>> BXMSDOC-2577: dynamic tasks and process with the API
+=======
+Dynamic user and service tasks are added to a case instance and immediately executed. Depending on the nature of a dynamic task, it might start and wait for completion (user task) or directly complete after execution (service task). For dynamic subprocesses, the process engine requires a KJAR containing the process definition for that dynamic process to locate the process by its ID and execute it. This subprocess belongs to the case and has access to all of the data in the case file.
+>>>>>>> BXMSDOC-2577: Incorporated SME and peer reviews
 
 You can use the Swagger REST API application to create dynamic tasks and subprocesses.
 
 .Prerequisite 
 <<<<<<< HEAD
+<<<<<<< HEAD
 You are logged in to {CENTRAL} and a case instance has been started using the Showcase application. For more information about using Showcase, see 
 =======
 You are logged in to {CENTRAL} and case instance has been started using the Showcase application. For more information about using Showcase, see 
 >>>>>>> BXMSDOC-2577: dynamic tasks and process with the API
+=======
+You are logged in to {CENTRAL} and a case instance has been started using the Showcase application. For more information about using Showcase, see 
+>>>>>>> BXMSDOC-2577: Incorporated SME and peer reviews
 ifeval::["{context}" == "case-management-design"]
 xref:case-management-showcase-application-con-case-management-design[Case management Showcase application].
 endif::[]
 
 .Procedure 
+<<<<<<< HEAD
 <<<<<<< HEAD
 . In a web browser, open the following URL: 
 +
@@ -43,14 +56,23 @@ endif::[]
 =======
 . In a web browser, open the following URL: `http://localhost:8080/kie-server/docs`.
 >>>>>>> BXMSDOC-2577: dynamic tasks and process with the API
+=======
+. In a web browser, open the following URL: 
++
+`http://localhost:8080/kie-server/docs`
+>>>>>>> BXMSDOC-2577: Incorporated SME and peer reviews
 . Open the list of available endpoints under *Case instances :: Case Management*.
 . Locate the `POST` method endpoints for creating dynamic activities.
 +
 image::swagger-case-management-dynamic.png[]
 . Click the REST endpoint required to create the dynamic task or process to open the documentation.
 <<<<<<< HEAD
+<<<<<<< HEAD
 . Click *Try it out* and provide the parameters and body required to create the dynamic activity.
 =======
 . Click the *Try it out* button to provide the parameters and body required to create the dynamic activity.
 >>>>>>> BXMSDOC-2577: dynamic tasks and process with the API
+=======
+. Click *Try it out* and provide the parameters and body required to create the dynamic activity.
+>>>>>>> BXMSDOC-2577: Incorporated SME and peer reviews
 . Click *Execute* to create the dynamic task or subprocess using the REST API. 
