@@ -23,9 +23,14 @@ endif::[]
 +
 . Click *Try it out* and complete the following parameters:
 +
-id:: `itorders`
-caseId:: `IT-0000000001`
-pId:: `itorders-data.place-order`
+.Parameters
+[cols="40%,60%",options="header"]
+|===
+|Name| Description
+|`id` | `itorders`
+|`caseId` | `IT-0000000001`
+|`pId` | `itorders-data.place-order`
+|===
 +
 The `pId` is the process ID of the subprocess to be created.
 +

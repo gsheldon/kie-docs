@@ -29,8 +29,14 @@ endif::[]
 +
 . Click *Try it out* to complete the following parameters:
 +
-id:: `itorders`
-caseId:: `IT-0000000001`
+.Parameters
+[cols="40%,60%",options="header"]
+|===
+|Name| Description
+|`id` | `itorders`
+|`caseId` | `IT-0000000001`
+|===
++
 body::
 +
 [source]

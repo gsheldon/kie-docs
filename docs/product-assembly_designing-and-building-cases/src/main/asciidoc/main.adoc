@@ -53,7 +53,7 @@ include::case-management-creating-roles-proc.adoc[leveloffset=+2]
 include::product-assembly_case-management-getting-started/case-management-role-authorization-proc.adoc[leveloffset=+2]
 include::case-management-assign-task-to-role-proc.adoc[leveloffset=+2]
 include::case-management-modifying-roles-during-runtime-proc.adoc[leveloffset=+2]
-
+include::case-management-modifying-roles-during-runtime-API-proc.adoc[leveloffset=+2]
 
 include::product-user-guide/case-management-stages-con.adoc[leveloffset=+1]
 include::product-assembly_case-management-getting-started/case-management-defining-a-stage-proc.adoc[leveloffset=+2]
