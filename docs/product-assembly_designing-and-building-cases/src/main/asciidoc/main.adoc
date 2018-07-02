@@ -79,6 +79,11 @@ include::product-assembly_case-management-getting-started/case-management-starti
 // include::case-management-security-con.adoc[leveloffset=+1]
 // include::case-management-security-configuration-proc.adoc[leveloffset=+2]
 
+include::case-management-closing-cases-ref.adoc[leveloffset=+1]
+include::product-assembly_designing-and-building-cases/case-management-close-case-using-API-proc.adoc[leveloffset=+2]
+include::product-assembly_case-management-getting-started/case-management-close-case-proc.adoc[leveloffset=+2]
+include::product-assembly_case-management-getting-started/case-management-cancel-or-destroy-case-proc.adoc[leveloffset=+1]
+
 // Swagger for APIs
 
 

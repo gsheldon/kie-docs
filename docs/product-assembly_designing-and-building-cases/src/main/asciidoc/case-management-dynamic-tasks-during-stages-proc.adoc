@@ -1,5 +1,5 @@
 [id='case-management-dynamic-tasks-during-stages-proc']
-= Adding a dynamic task to a stages
+= Adding a dynamic task to a stage
 
 Dynamic tasks can be added to a case stage during run time using a REST API request. This is similar to adding a dynamic task to a case instance, but you must also define the `caseStageId` of the stage to which the task is added.
 
@@ -47,9 +47,14 @@ image::case-with-stage-diagram-view.png[]
 +
 . Click *Try it out* to complete the following parameters:
 +
-id:: `itorders`
-caseId:: `IT-0000000001`
-caseStageId:: `Order delivery`
+.Parameters
+[cols="40%,60%",options="header"]
+|===
+|Name| Description
+|`id` | `itorders`
+|`caseId` | `IT-0000000001`
+|`caseStageId` | `Order delivery`
+|===
 +
 The `caseStageId` is the name of the stage in the case definition where the dynamic task is to be created. 
 +
