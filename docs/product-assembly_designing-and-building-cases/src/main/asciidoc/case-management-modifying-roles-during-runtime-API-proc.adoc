@@ -1,7 +1,7 @@
 [id='case-management-modifying-roles-during-runtime-API-proc-{context}']
 = Modifying case role assignments during run time using REST API
 
-You can change case instance role assignments during case run time using the REST API or Swagger application. Roles are defined in the case definition and assigned to tasks in the case lifecycle. Roles cannot change during run time as they are predefined, but you can change the actors assigned to the roles to change who is responsible for carrying out case tasks. 
+You can change case instance role assignments during case run time using the REST API or Swagger application. Roles are defined in the case definition and assigned to tasks in the case lifecycle. Roles cannot change during run time because they are predefined, but you can change the actors assigned to the roles to change who is responsible for carrying out case tasks. 
 
 The following procedure includes examples based on the IT Orders sample project. You can use the same REST API endpoints in the Swagger application or any other REST API client, or using Curl. 
 
