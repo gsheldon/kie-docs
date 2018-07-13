@@ -65,6 +65,9 @@ include::product-user-guide/case-management-milestones-con.adoc[leveloffset=+1]
 include::product-assembly_case-management-getting-started/case-management-milestone-triggering-proc.adoc[leveloffset=+2]
 // include::case-management-milestone-completion-using-case-file-data-proc.adoc[leveloffset=+2]
 
+include::case-management-rules-con.adoc[leveloffset=+1]
+include::case-management-using-rules-proc.adoc[leveloffset=+2]
+
 include::product-assembly_case-management-getting-started/case-management-showcase-application-con.adoc[leveloffset=+1]
 include::product-assembly_case-management-getting-started/case-management-install-and-login-to-showcase-proc.adoc[leveloffset=+2]
 include::product-assembly_case-management-getting-started/case-management-starting-itorders-in-showcase-proc.adoc[leveloffset=+2]
