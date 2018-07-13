@@ -3,7 +3,7 @@
 
 Refer to the the case management IT Orders sample scenario in {CENTRAL}. 
 
-Suppose that the particular hardware specification provided by the supplier is incorrect or invalid. The supplier need to provide a new, valid order so that the case can continue. Rather than wait for the manager to reject the invalid specification and create a new request for the supplier, you can create a business rule that will react immediately when the case data indicates that the provided specification is invalid. It can then create a new hardware specification request for the supplier. 
+Suppose that the particular hardware specification provided by the supplier is incorrect or invalid. The supplier needs to provide a new, valid order so that the case can continue. Rather than wait for the manager to reject the invalid specification and create a new request for the supplier, you can create a business rule that will react immediately when the case data indicates that the provided specification is invalid. It can then create a new hardware specification request for the supplier. 
 
 The following procedure demonstrates how to create and use a business rule to execute the described scenario.
 
@@ -83,14 +83,14 @@ Instead of the *Task Inbox* showing the `Prepare hardware spec` as `Complete`, i
 image::case-management-new-spec-task.png[]
 +
 This is because the first `Prepare hardware spec` task has been completed with the specification file `invalid.pdf`. As a result, the business rule causes the task and file to be discarded, and a new user task created.
-. In the {CENTRAL} *Task Inbox*, repeat steps 12 and 13, but `valid-spec.pdf` instead of `invalid.pdf`. 
+. In the {CENTRAL} *Task Inbox*, repeat steps 12 and 13, but upload the `valid-spec.pdf` file instead of `invalid.pdf`. 
 . Log out of {CENTRAL} and log back in again as `Katy`. 
 . Go to *Menu* -> *Track* -> *Task Inbox*. There are two `Manager approval` tasks for Katy, one with the `invalid.pdf` hardware specification file, the other with the `valid-spec.pdf` file. 
 . Open, claim, and complete each task:
 .. Check the `approve` box for the task that includes the `valid-spec.pdf` file, then click *Complete*.
 .. Do not check the `approve` box on the task with the `invalid.pdf` file, then click *Complete*.
 . Go to *Menu* -> *Manage* -> *Process Instances* and open the *Order for IT hardware* process instance. 
-. Open the *Diagram* tab. Note that the process includes both completed `Order rejected` and `Place order` tasks. 
+. Open the *Diagram* tab. Note that the process both `Order rejected` and `Place order` tasks as completed. 
 +
 image::case-management-two-orders.png[]
 +
