@@ -1,0 +1,36 @@
+[id='case-management-security-configuration-proc-{context}']
+= Configuring security for case management
+
+You can turn off case instance authorization by setting the following system property to `false`:
++
+`org.jbpm.cases.auth.enabled`
+
+This system property is just one of the security components for case instances. 
+
+In addition, security for case operations is configurable using a property file called `case-authorization.properties` that is available at the root of the classpath when you start a case application. Format of this file is very simple:
+
+`OPERATION=role1,role2,roleN`
+
+Using a simple configuration file for all possible case definitions encourages you to think about case management as domain-specific. `AuthorizationManager` for case security is pluggable, which allows you to include custom code for specific security handling.
+
+
+You can configure the following case instance operations to be restricted to case roles:
+
+`CANCEL_CASE`
+`DESTROY_CASE`
+`REOPEN_CASE`
+`ADD_TASK_TO_CASE`
+`ADD_PROCESS_TO_CASE`
+`ADD_DATA`
+`REMOVE_DATA`
+`MODIFY_ROLE_ASSIGNMENT`
+`MODIFY_COMMENT`
+
+By default three of these operations are protected with the `owner` and `admin` roles:
+
+`CANCEL_CASE`
+`DESTROY_CASE`
+`REOPEN_CASE`
+
+
+
