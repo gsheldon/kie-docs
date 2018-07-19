@@ -78,8 +78,8 @@ include::product-assembly_case-management-getting-started/case-management-starti
 // include::case-management-completion-conditions-con.adoc[leveloffset=+1] <---covered in stages and milestones already?
 // include::case-management-stage-completion-using-case-file-data-proc.adoc[leveloffset=+1] <--- is this a thing?
 
-// include::case-management-security-con.adoc[leveloffset=+1]
-// include::case-management-security-configuration-proc.adoc[leveloffset=+2]
+include::case-management-security-con.adoc[leveloffset=+1]
+include::case-management-security-configuration-proc.adoc[leveloffset=+2]
 
 include::case-management-closing-cases-ref.adoc[leveloffset=+1]
 include::product-assembly_designing-and-building-cases/case-management-close-case-using-API-proc.adoc[leveloffset=+2]
