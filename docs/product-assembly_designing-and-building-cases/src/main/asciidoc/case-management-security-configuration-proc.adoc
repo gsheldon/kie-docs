@@ -5,7 +5,7 @@ You can turn off case instance authorization by setting the following system pro
 
 `org.jbpm.cases.auth.enabled`
 
-This system property is just one of the security components for case instances.In addition, you can configure case operations at the execution server-level using a property file called `case-authorization.properties`, which is available at the root of the class path when you start a case application. 
+This system property is just one of the security components for case instances. In addition, you can configure case operations at the execution server level using the `case-authorization.properties` file, available at the root of the class path of the execution server application (`kie-server.war/WEB-INF/classes`).
 
 Using a simple configuration file for all possible case definitions encourages you to think about case management as domain-specific. `AuthorizationManager` for case security is pluggable, which allows you to include custom code for specific security handling.
 
