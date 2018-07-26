@@ -1,0 +1,32 @@
+[id='autoacknowledge-execution-errors-proc']
+= Auto acknowledging execution errors
+
+When executions errors occur they are unacknowledged by default, and require a manual action to be performed otherwise they are always seen as information that requires attention. In case of larger volumes, manual actions can be time consuming and not suitable in some situations. 
+
+Auto acknowledgment resolves this issue. It is based on scheduled jobs by way of the `jbpm-executor`, with the following three types of jobs available:
+
+* `org.jbpm.executor.commands.error.JobAutoAckErrorCommand`
+** Responsible for finding jobs that previously failed but now are either canceled, completed, or rescheduled for another execution. This job only acknowledges execution errors of type `Job`.
+* `org.jbpm.executor.commands.error.TaskAutoAckErrorCommand`
+** Responsible for auto acknowledgment of user task execution errors for tasks that previously failed but now are in one of the exit states (completed, failed, exited, obsolete). This job only acknowledges execution errors of type `Task`.
+* `org.jbpm.executor.commands.error.ProcessAutoAckErrorCommand`
+** Responsible for auto acknowledgment of process instances that have errors attached. It acknowledges errors where the process instance is already finished (completed or aborted), or the task that the error originated from is already finished. This is based on `init_activity_id` value. This job acknowledges any type of job that matches the above criteria.
+
+Jobs can be registered on the {KIE_SERVER}. They are reoccurring job types, and run once a day by default unless explicitly set to `SingleRun`.  Configure auto acknowledge jobs for errors in the following way:
+
+. In Business Central, click *Deploy* -> *Jobs*.
+. In the top right of the screen, click *New Job*.
+. In the *Type* field, add the auto acknowledge job type from the list above.
++
+image::auto_acknowledge_error_job1.png[]
+
+The following steps are optional, and allow you to configure auto acknowledge jobs to run either once (`SingleRun`), on specific time intervals (`NextRun`), or using the custom name of an entity manager factory to search for jobs to acknowledge (`EmfName`).
+
+. Click on the *Advanced* tab.
+. Click the *Add Parameter* button.
+. Enter the configuration parameter you want to apply to the job:
+.. `SingleRun`: `true` or `false`
+.. `NextRun`: time expression, such as 2h, 5d, 1m, and so on.
+.. `EmfName`: custom entity manager factory name.
++
+image::auto_acknowledge_error_job2.png[]

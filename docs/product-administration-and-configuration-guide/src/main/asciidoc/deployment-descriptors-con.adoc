@@ -1,0 +1,18 @@
+[id='deployment_descriptors-con']
+= Deployment Descriptors
+
+Processes and rules are stored in Apache Maven based packaging and are known as knowledge archives, or KJAR. The rules, processes, assets, and other project artifacts are part of a JAR file built and managed by Maven. A file kept inside the `META-INF` directory of the KJAR called `kmodule.xml` can be used to define the knowledge bases and sessions. This `kmodule.xml` file, by default, is empty.
+
+Whenever a runtime component such as {CENTRAL} is about to process the KJAR, it looks up `kmodule.xml` to build the runtime representation.
+
+__Deployment Descriptors__, a new feature introduced in the 6.1 branch of Red Hat JBoss BPM Suite, allows you fine grained control over your deployment and supplements the `kmodule.xml` file.
+The presence of these descriptors is optional and your deployment will proceed successfully without them. The properties that you can set using these descriptors are purely technical in nature and include meta values like persistence, auditing and runtime strategy.
+
+These descriptors allow you to configure the execution server on multiple levels (server level default, different deployment descriptor per KJAR and so on). This allows you to make simple customizations to the execution server's default configuration (possibly per KJAR).
+
+You can define these descriptors in a file called `kie-deployment-descriptor.xml` and place this file next to your `kmodule.xml` file in the `META-INF` folder. You can change this default location (and the filename) by specifying it as a system parameter:
+
+[source]
+----
+-Dorg.kie.deployment.desc.location=file:/path/to/file/company-deployment-descriptor.xml
+----
