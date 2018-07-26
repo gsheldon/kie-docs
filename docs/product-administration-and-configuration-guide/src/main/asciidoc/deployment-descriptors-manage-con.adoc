@@ -1,0 +1,35 @@
+= Managing Deployment Descriptors
+
+Deployment Descriptors can be edited via the Business Central in one of two ways. Either graphically (by clicking on *Authoring* -> *Project Authoring* -> *Deployment Descriptor* or by clicking on *Authoring* -> *Administration* menu and then clicking through to the `META-INF` folder in the File Explorer. Click on the `kie-deployment-descriptor.xml` file to edit it manually.
+
+Every time a project is created, a stock `kie-deployment-descriptor.xml` file is generated with default values as described earlier.
+
+
+[float]
+==== Do I Need to Provide a Full Deployment Descriptor for All Kjars?
+
+_No_, and this is where the beauty of the merge between different files can help you. Providing partial Deployment Descriptors is possible and recommended. For example, if you want to only override the audit mode in a KJAR, then you just need to provide that and the rest of the values will be merged from server level or higher level KJARs.
+
+It is worth noting that when using `OVERRIDE_ALL` merge mode, all configuration items should be specified since the relevant KJAR will always use them and will not merge with any other deployment descriptor in the hierarchy.
+
+[float]
+==== Restricting Access to the Runtime Engine
+
+One of the configuration items discussed earlier, [property]``required-roles``, can be edited via the Deployment Descriptors. This property restricts access to the runtime engine on a per KJAR or per server level by ensuring that access to certain processes is only granted to users that belong to groups defined by this property.
+
+The security role can be used to restrict access to process definitions or restrict access at runtime.
+
+The default behavior is to add required roles to this property based on repository restrictions.
+You can of course, edit these properties manually if required, as described above by providing roles that match actual roles defined in the security realm.
+
+
+[id='_managing_deployment_override_policy']
+== Managing Deployment Override Policy
+
+If a user tries to deploy an artifact with a GAV (Group-Id, Artifact-Id and Version) that already exists in the system, the deployment will fail and an error message will be displayed in the *Messages* panel.
+
+This feature prevents the user from overwriting an existing deployment by mistake.
+
+By default this feature is enabled, that is, by default the system will prevent the user from overwriting an existing installation with the same GAV.
+
+However, there may be cases when the user _may_ want to overwrite existing deployments with the same GAV. Although you cannot enable overwriting on a per-deployment basis, you can set this up for the system as a whole by using the system setting [property]``org.kie.override.deploy.enabled``. This setting, is `false` by default. Change it to `true` to enable overwriting of deployments with the same GAV by providing it at startup time of your server (``-Dorg.kie.override.deploy.enabled=true``).

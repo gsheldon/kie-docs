@@ -17,10 +17,63 @@ As a systems administrator, you want to be able to install, configure, and upgra
 * {PRODUCT} is running and you can log in to {CENTRAL} with the `admin` role. For more information, see the {URL_PLANNING_INSTALL}[_{PLANNING_INSTALL}_].
 
 // Modules - concepts, procedures, refs, etc.
+include::product-installation-guide/components-con.adoc[leveloffset=+1]
+
+include::product-installation-guide/patches-applying-proc.adoc[leveloffset=+1]
+
+include::product-migration-guide/migration-configure-kie-server-proc.adoc[leveloffset=+1]
+
+include::product-installation-guide/eap-data-source-add-proc.adoc[leveloffset=+1]
+include::product-installation-guide/eap-execution-server-configure-proc.adoc[leveloffset=+1]
+
+include::product-installation-guide/controller-con.adoc[leveloffset=+1]
+include::product-installation-guide/installer-controller-eap-proc.adoc[leveloffset=+2]
+include::product-installation-guide/controller-eap-install-proc.adoc[leveloffset=+2]
+include::product-installation-guide/controller-eap-users-create-proc.adoc[leveloffset=+3]
+include::product-installation-guide/controller-eap-configure-proc.adoc[leveloffset=+3]
+include::product-installation-guide/controller-eap-run-proc.adoc[leveloffset=+2]
+include::product-installation-guide/clustering-headless-controller-proc.adoc[leveloffset=+2]
+include::product-installation-guide/clustering-standalone-pc-proc.adoc[leveloffset=+2]
+For more information about running {PRODUCT} in a {EAP_LONG} clustered environment, see {URL_INSTALLING_ON_EAP_CLUSTER}[_{INSTALLING_ON_EAP_CLUSTER}_].
 
 
+include::product-user-guide/kieserver-configure-central-proc.adoc[leveloffset=+1]
+
+include::product-administration-and-configuration-guide/kie-server-accessing-runtime-data-proc.adoc[leveloffset=+1]
 
 
+include::product-administration-and-configuration-guide/kie-server-configure-server-managed-by-workbench-proc.adoc[leveloffset=+1]
+include::product-administration-and-configuration-guide/kie-server-managed-kie-server-con.adoc[leveloffset=+1]
+include::product-administration-and-configuration-guide/kie-server-unmanaged-server-config-proc.adoc[leveloffset=+1]
+
+//Deployment descriptors content? 
+
+include::product-administration-and-configuration-guide/persistence-con.adoc[leveloffset=+1]
+include::product-administration-and-configuration-guide/safe-points-configuring-proc.adoc[leveloffset=+2]
+include::product-administration-and-configuration-guide/session-persistence-entities-ref.adoc[leveloffset=+2]
+include::product-administration-and-configuration-guide/process-instance-persistence-entities-ref.adoc[leveloffset=+2]
+include::product-administration-and-configuration-guide/workitem-entities-ref.adoc[leveloffset=+2]
+include::product-administration-and-configuration-guide/correlationkey-entities-ref.adoc[leveloffset=+2]
+include::product-administration-and-configuration-guide/contextmapping-entities-ref.adoc[leveloffset=+2]
+include::product-administration-and-configuration-guide/pessimistic-locking-proc.adoc[leveloffset=+2]
+include::product-administration-and-configuration-guide/persistence-configuration-jbpmhelper-proc.adoc[leveloffset=+2]
+include::product-administration-and-configuration-guide/persistence-configuration-jpaknowledgeservice-proc.adoc[leveloffset=+2]
+
+
+include::product-administration-and-configuration-guide/sso-third-party-proc.adoc[leveloffset=+1]
+include::product-administration-and-configuration-guide/sso-basic-auth-proc.adoc[leveloffset=+2]
+//include::product-administration-and-configuration-guide/sso-token-auth-proc.adoc[leveloffset=+2]
+For more information about configuring {PRODUCT} single sign-on and token-based authentication, see {URL_INTEGRATING_SSO}[_{INTEGRATING_SSO}__].
+
+include::product-administration-and-configuration-guide/kie-server-bootstrap-switches-ref.adoc[leveloffset=+1]
+include::product-installation-guide/install-standalone-properties-con.adoc[leveloffset=+1]
+include::product-installation-guide/run-standalone-properties-con.adoc[leveloffset=+1]
+
+== Related information
+* {URL_INSTALLING_ON_EAP}[_{INSTALLING_ON_EAP}_]
+* {URL_PLANNING_INSTALL}[_{PLANNING_INSTALL}_]
+* {URL_INSTALLING_ON_EAP}[_{INSTALLING_ON_EAP}_]
+* {URL_DEPLOYING_AUTHORING_ON_OPENSHIFT}[_{DEPLOYING_AUTHORING_ON_OPENSHIFT}_]
 
 //Versioning info
 include::product-shared-docs/versioning-information.adoc[]
