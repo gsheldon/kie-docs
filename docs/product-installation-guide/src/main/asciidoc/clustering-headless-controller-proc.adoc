@@ -8,7 +8,9 @@ Process Automation Manager controller
 endif::[]  
 ifdef::DM[]
 Decision Server controller
-endif::[] manages the {KIE_SERVER} configuration and you interact with the controller to create and maintain containers.
+endif::[] 
+
+manages the {KIE_SERVER} configuration and you interact with the controller to create and maintain containers.
 
 The 
 

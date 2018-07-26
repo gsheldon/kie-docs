@@ -1,0 +1,22 @@
+= Overriding Hierarchical Merge Mode Behavior
+
+[float]
+==== Can You Override this Hierarchal Merge Mode Behavior?
+
+_Yes_. In the default way, if there are deployment descriptors present at multiple levels, the configuration properties are merged with the granular ones overriding the coarse values, and with missing configuration items at the granular level being supplied with those values from the higher levels. The end result is a merged Deployment Descriptor configuration. This default merge mode is called the [parameter]``MERGE_COLLECTIONS`` mode. However, you can change it (see <<_managing_deployment_descriptors>>) if it does not suit your environment to one of the following modes:
+
+* `KEEP_ALL`: In this mode, all higher level values override all lower level values (server level values replace KJAR level values)
+* `OVERRIDE_ALL`: In this mode, all lower level values override all higher level values (KJAR values replace server level values)
+* `OVERRIDE_EMPTY`: In this mode, all _non empty_ configuration items from lower levels replace those at higher levels, including items that are represented as collections.
+* `MERGE_COLLECTIONS (DEFAULT)`: In this mode, all non empty configuration items from lower level replace those from higher levels (like in `OVERRIDE_EMPTY`), but collection properties are merged (combined).
+
+Deployment Descriptors from dependent KJARs are placed lower than the actual KJAR being deployed, but they still have higher hierarchy than the server level.
+
+
+
+To change the default mode of [property]``MERGE_COLLECTIONS`` to one of [property]``KEEP_ALL``, [property]``OVERRIDE_ALL``, or [property]``OVERRIDE_EMPTY``, you can use the following methods, depending on the requirement.
+
+* Set the system property [property]``org.kie.dd.mergemode`` to one of these values. This merge mode will become default for all KJARs deployed in the system, unless you override it at a KJAR level via the next method.
+* When deploying a new deployment unit via Business Central (*Deploy* -> *Deployments*) you can select what merge mode should be used for that particular KJAR.
+* When deploying via the REST API, you can add [property]``mergemode`` query parameter to the command URL to one of these modes to set the merge mode for that deployment.
+
