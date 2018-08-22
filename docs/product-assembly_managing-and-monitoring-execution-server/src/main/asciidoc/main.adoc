@@ -19,6 +19,12 @@ As a systems administrator, you want to be able to install, configure, and upgra
 // Modules - concepts, procedures, refs, etc.
 include::product-installation-guide/components-con.adoc[leveloffset=+1]
 
+//include::product-development-guide/maven-con.adoc[leveloffset=+1]
+include::product-installation-guide/maven-integration-ref.adoc[leveloffset=+1]
+include::product-installation-guide/preemptive-authentication-for-local-projects-proc.adoc[leveloffset=+2]
+include::product-user-guide/project-duplicate-GAV-con.adoc[leveloffset=+2]
+include::product-user-guide/project-duplicate-GAV-manage-proc.adoc[leveloffset=+2]
+
 include::product-installation-guide/patches-applying-proc.adoc[leveloffset=+1]
 
 include::product-migration-guide/migration-configure-kie-server-proc.adoc[leveloffset=+1]
@@ -37,7 +43,7 @@ include::product-installation-guide/clustering-standalone-pc-proc.adoc[leveloffs
 For more information about running {PRODUCT} in a {EAP_LONG} clustered environment, see {URL_INSTALLING_ON_EAP_CLUSTER}[_{INSTALLING_ON_EAP_CLUSTER}_].
 
 
-include::product-user-guide/kieserver-configure-central-proc.adoc[leveloffset=+1]
+include::product-user-guide/kie-server-configure-central-proc.adoc[leveloffset=+1]
 
 include::product-administration-and-configuration-guide/kie-server-accessing-runtime-data-proc.adoc[leveloffset=+1]
 
@@ -47,6 +53,15 @@ include::product-administration-and-configuration-guide/kie-server-managed-kie-s
 include::product-administration-and-configuration-guide/kie-server-unmanaged-server-config-proc.adoc[leveloffset=+1]
 
 //Deployment descriptors content? 
+
+include::product-administration-and-configuration-guide/execution-error-management-con.adoc[leveloffset=+1]
+include::product-administration-and-configuration-guide/manage-execution-errors-proc.adoc[leveloffset=+2]
+include::product-administration-and-configuration-guide/executionerrorhandler-con.adoc[leveloffset=+2]
+include::product-administration-and-configuration-guide/execution-error-storage-con.adoc[leveloffset=+2]
+include::product-administration-and-configuration-guide/error-types-and-filters-ref.adoc[leveloffset=+2]
+include::product-administration-and-configuration-guide/autoacknowledge-execution-errors-proc.adoc[leveloffset=+2]
+include::product-administration-and-configuration-guide/error-list-cleanup-ref.adoc[leveloffset=+2]
+
 
 include::product-administration-and-configuration-guide/persistence-con.adoc[leveloffset=+1]
 include::product-administration-and-configuration-guide/safe-points-configuring-proc.adoc[leveloffset=+2]
@@ -59,6 +74,7 @@ include::product-administration-and-configuration-guide/pessimistic-locking-proc
 include::product-administration-and-configuration-guide/persistence-configuration-jbpmhelper-proc.adoc[leveloffset=+2]
 include::product-administration-and-configuration-guide/persistence-configuration-jpaknowledgeservice-proc.adoc[leveloffset=+2]
 
+include::product-administration-and-configuration-guide/ldap-login-domain-proc.adoc[leveloffset=+1]
 
 include::product-administration-and-configuration-guide/sso-third-party-proc.adoc[leveloffset=+1]
 include::product-administration-and-configuration-guide/sso-basic-auth-proc.adoc[leveloffset=+2]
