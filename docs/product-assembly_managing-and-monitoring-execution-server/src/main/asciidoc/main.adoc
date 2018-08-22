@@ -62,6 +62,7 @@ include::product-administration-and-configuration-guide/error-types-and-filters-
 include::product-administration-and-configuration-guide/autoacknowledge-execution-errors-proc.adoc[leveloffset=+2]
 include::product-administration-and-configuration-guide/error-list-cleanup-ref.adoc[leveloffset=+2]
 
+include::product-administration-and-configuration-guide/configuring-openshift-connection-timeout-proc.adoc[leveloffset=+1]
 
 include::product-administration-and-configuration-guide/persistence-con.adoc[leveloffset=+1]
 include::product-administration-and-configuration-guide/safe-points-configuring-proc.adoc[leveloffset=+2]
